@@ -36,3 +36,35 @@
     transform: rotate(360deg);
   }
 }
+
+@font-face {
+  font-family: zen-antque-regular;
+  src: url(../public/ZenAntique-Regular.woff);
+}
+
+.zen-antque-regular {
+  font-family: zen-antque-regular;
+}
+
+@font-face {
+  font-family: red-hat-text;
+  src: url(../public/red-hat.text.ttf);
+}
+
+.red-hat-text {
+  font-family: red-hat-text;
+}
+
+@font-face {
+  font-family: red-hat-text-medium;
+  src: url(../public/red-hat.text-medium.ttf);
+}
+
+.red-hat-text-medium {
+  font-family: red-hat-text-medium;
+}
+
+.red-hat-text-bold {
+  font-family: red-hat-text;
+  font-weight: bold;
+}

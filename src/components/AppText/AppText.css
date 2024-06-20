@@ -1,0 +1,19 @@
+.app-text {
+  font-size: 65px;
+  color: #ffffff;
+}
+
+.app-text:hover {
+  animation: textHover 0.5s forwards;
+}
+
+@keyframes textHover {
+  50% {
+    color: #ffa07a;
+    transform: translateY(0px);
+  }
+  100% {
+    color: #ff4500;
+    transform: translateY(-1px);
+  }
+}
