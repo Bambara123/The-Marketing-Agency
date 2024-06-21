@@ -6,8 +6,6 @@ import "./ServiceTypes.css";
 import { serviceTypesList } from "../../mockData/mockdata";
 
 export default function ServiceTypes() {
-  console.log(serviceTypesList);
-
   return (
     <div className="service-types" style={{ backgroundColor: colors.black }}>
       <Wrap

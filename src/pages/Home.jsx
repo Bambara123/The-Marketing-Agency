@@ -3,7 +3,6 @@ import "./Home.css";
 
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
-
 import ServiceTypes from "../components/ServiceTypes/ServiceTypes";
 import ClientTypes from "../components/ClientTypes/ClientTypes";
 
