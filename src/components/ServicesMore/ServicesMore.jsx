@@ -1,18 +1,8 @@
 import React from "react";
-import {
-  Text,
-  Divider,
-  Grid,
-  Box,
-  VStack,
-  Wrap,
-  Flex,
-  WrapItem,
-} from "@chakra-ui/react";
+import { Text, Divider, Grid, Box, VStack, Wrap, Flex } from "@chakra-ui/react";
 import colors from "../../config/colors";
 import "./ServicesMore.css";
-import ServiceCard from "../ServiceCard/ServiceCard";
-import { serviceTypesList } from "../../mockData/mockdata";
+
 import { serviceMoreCardData } from "../../mockData/mockdata";
 import ServiceMoreCard from "../ServiceMoreCard/ServiceMoreCard";
 
@@ -77,23 +67,16 @@ export default function () {
           </Box>
         </Grid>
       </Grid>
-      <Wrap
-        spacing="120px"
-        align="center"
-        justify="center"
-        p={30} // this means 30px
-      >
+      <Wrap spacing={10} align="center" justify="center" p={30}>
         {serviceMoreCardData.map((data) => {
           return (
-            <WrapItem>
-              <ServiceMoreCard
-                title={data.title}
-                subtitle={data.subtitle}
-                desc1={data.desc1}
-                desc2={data.desc2}
-                desc3={data.desc3}
-              />
-            </WrapItem>
+            <ServiceMoreCard
+              title={data.title}
+              subtitle={data.subtitle}
+              desc1={data.desc1}
+              desc2={data.desc2}
+              desc3={data.desc3}
+            />
           );
         })}
       </Wrap>

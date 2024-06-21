@@ -1,7 +1,8 @@
-import { VStack, Text } from "@chakra-ui/react";
+import { VStack, Text, Box } from "@chakra-ui/react";
 import React from "react";
 import colors from "../../config/colors";
 import AppText from "../AppText/AppText";
+import "./ServiceMoreCard.css";
 
 export default function ServiceMoreCard({
   title,
@@ -11,13 +12,20 @@ export default function ServiceMoreCard({
   desc3,
 }) {
   return (
-    <div className="serviceMoreCard" style={{ width: "50%" }}>
-      <VStack align="start">
+    <Box
+      style={{ width: "550px" }}
+      p={10}
+      bg={colors.card_black}
+      borderRadius={15}
+      className="service-more-card"
+    >
+      <VStack align="start" spacing={8}>
         <Text
           textAlign="left"
           color={colors.white}
-          fontSize={40}
+          fontSize={45}
           className="zen-antque-regular"
+          lineHeight={1}
         >
           {title}
         </Text>
@@ -55,8 +63,8 @@ export default function ServiceMoreCard({
         >
           {desc3}
         </Text>
-        <AppText>Learn More</AppText>
+        <AppText fontSize={26}>Learn More</AppText>
       </VStack>
-    </div>
+    </Box>
   );
 }

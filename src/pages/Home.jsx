@@ -6,6 +6,8 @@ import Footer from "../components/Footer/Footer";
 import ServiceTypes from "../components/ServiceTypes/ServiceTypes";
 import ClientTypes from "../components/ClientTypes/ClientTypes";
 import ServicesMore from "../components/ServicesMore/ServicesMore";
+import Testimonial from "../components/Testimonial/Testimonial";
+import WorkTogether from "../components/WorkTogether/WorkTogether";
 
 export default function Home() {
   return (
@@ -21,7 +23,13 @@ export default function Home() {
         <section className="services-more">
           <ServicesMore></ServicesMore>
         </section>
-        <section className="testimonnial"></section>
+        <section className="testimonnial">
+          <Testimonial></Testimonial>
+        </section>
+
+        <section className="work-together">
+          <WorkTogether></WorkTogether>
+        </section>
       </div>
 
       <Footer></Footer>

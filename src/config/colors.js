@@ -1,5 +1,6 @@
 const colors = {
   black: "#101010",
+  card_black: "#181818",
   gray: "#C3C3C3",
   dark_gray: "#878787",
   green: "#1DA86E",

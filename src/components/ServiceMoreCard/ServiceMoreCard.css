@@ -1,0 +1,19 @@
+.service-more-card {
+  border-width: 1px;
+  border-color: #181818;
+}
+
+.service-more-card:hover {
+  animation: borderHover 1s forwards;
+}
+
+@keyframes borderHover {
+  0% {
+    border-width: 1px;
+    border-color: #ffa07a;
+  }
+  100% {
+    border-width: 1px;
+    border-color: #ff4500;
+  }
+}

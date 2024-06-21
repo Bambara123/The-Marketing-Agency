@@ -1,0 +1,17 @@
+.worktogether-dev .arrow-container {
+  background-color: #dd582d;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+}
+
+.worktogether-dev .arrow {
+  transform: rotate(-45deg);
+  transition: transform 1s ease-in-out;
+  z-index: 1;
+}
+
+.worktogether-dev .arrow:hover {
+  transform: rotate(0deg);
+  z-index: 1;
+}
