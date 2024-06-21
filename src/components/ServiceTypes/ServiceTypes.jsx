@@ -1,6 +1,6 @@
 import React from "react";
 import ServiceCard from "../ServiceCard/ServiceCard";
-import { Wrap, WrapItem, Center } from "@chakra-ui/react";
+import { Wrap, WrapItem } from "@chakra-ui/react";
 import colors from "../../config/colors";
 import "./ServiceTypes.css";
 import { serviceTypesList } from "../../mockData/mockdata";
@@ -31,13 +31,4 @@ export default function ServiceTypes() {
       </Wrap>
     </div>
   );
-}
-
-{
-  /* // <WrapItem>
-        //   <ServiceCard></ServiceCard>
-        // </WrapItem>
-        // <WrapItem>
-        //   <ServiceCard></ServiceCard>
-        // </WrapItem> */
 }

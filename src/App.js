@@ -1,8 +1,6 @@
 import "./App.css";
 import colors from "./config/colors";
 import Home from "./pages/Home";
-import logo from "./logo.svg";
-import ima from "./peter.jpg";
 
 function App() {
   return (

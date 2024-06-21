@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, HStack, Text, Box } from "@chakra-ui/react";
+import { HStack, Text, Box } from "@chakra-ui/react";
 import colors from "../../config/colors";
 import AppText from "../AppText/AppText";
 
