@@ -20,7 +20,7 @@ export default function ServiceTypes() {
             <WrapItem>
               <ServiceCard
                 imageUrl={serviceType.image}
-                title={serviceType.title}
+                title_={serviceType.title}
                 subtitle={serviceType.subtitle}
               ></ServiceCard>
             </WrapItem>

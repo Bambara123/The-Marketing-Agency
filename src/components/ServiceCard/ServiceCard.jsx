@@ -3,7 +3,7 @@ import "./ServiceCard.css";
 import { Box, Center, Image, Text, VStack } from "@chakra-ui/react";
 import colors from "../../config/colors";
 
-export default function ServiceCard({ imageUrl, title, subtitle }) {
+export default function ServiceCard({ imageUrl, title_, subtitle }) {
   return (
     <div className="service-card">
       <Center color="white">
@@ -16,7 +16,7 @@ export default function ServiceCard({ imageUrl, title, subtitle }) {
             color={colors.white}
             className="zen-antque-regular"
           >
-            {title}
+            {title_}
           </Text>
           <Text color={colors.dark_gray} className="red-hat-text-bold">
             {subtitle}
