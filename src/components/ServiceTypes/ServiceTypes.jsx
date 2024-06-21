@@ -9,7 +9,6 @@ export default function ServiceTypes() {
   return (
     <div className="service-types" style={{ backgroundColor: colors.black }}>
       <Wrap
-        color={colors.black}
         spacing="120px"
         align="center"
         justify="center"

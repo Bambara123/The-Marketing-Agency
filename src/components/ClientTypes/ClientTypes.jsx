@@ -2,6 +2,8 @@ import React from "react";
 import { HStack, Text, Box } from "@chakra-ui/react";
 import colors from "../../config/colors";
 import AppText from "../AppText/AppText";
+import Marquee from "react-fast-marquee";
+import "./ClientTypes.css";
 
 export default function ClientTypes() {
   return (
@@ -30,6 +32,50 @@ export default function ClientTypes() {
           <AppText>NGOs</AppText>
         </HStack>
       </Box>
+      <Marquee>
+        <div className="slide">
+          <img
+            src={process.env.PUBLIC_URL + "/logos/Carlsburg.svg"}
+            alt=""
+            height="100px"
+          />
+        </div>
+        <div className="slide">
+          <img
+            src={process.env.PUBLIC_URL + "/logos/Carlsburg.svg"}
+            alt=""
+            height="100px"
+          />
+        </div>
+        <div className="slide">
+          <img
+            src={process.env.PUBLIC_URL + "/logos/Carlsburg.svg"}
+            alt=""
+            height="100px"
+          />
+        </div>
+        <div className="slide">
+          <img
+            src={process.env.PUBLIC_URL + "/logos/Carlsburg.svg"}
+            alt=""
+            height="100px"
+          />
+        </div>
+        <div className="slide">
+          <img
+            src={process.env.PUBLIC_URL + "/logos/Carlsburg.svg"}
+            alt=""
+            height="100px"
+          />
+        </div>
+        <div className="slide">
+          <img
+            src={process.env.PUBLIC_URL + "/logos/Carlsburg.svg"}
+            alt=""
+            height="100px"
+          />
+        </div>
+      </Marquee>
     </div>
   );
 }
