@@ -36,7 +36,7 @@ export default function ClientTypes() {
           <AppText classNameCustom="app-text-anim">NGOs</AppText>
         </HStack>
       </Box>
-      <Marquee style={{ paddingTop: "200px" }}>
+      <Marquee style={{ paddingTop: "200px" }} speed="100">
         {logosToSlide.map((logo, index) => (
           <Logo key={index} logoUrl={logo} />
         ))}
