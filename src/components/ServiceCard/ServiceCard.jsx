@@ -8,7 +8,7 @@ export default function ServiceCard({ imageUrl, title_, subtitle }) {
     <div className="service-card">
       <Center color="white">
         <VStack>
-          <Box>
+          <Box className="service-type-image">
             <Image src={process.env.PUBLIC_URL + imageUrl}></Image>
           </Box>
           <Text

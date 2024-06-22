@@ -5,6 +5,7 @@ import "./ServicesMore.css";
 
 import { serviceMoreCardData } from "../../mockData/mockdata";
 import ServiceMoreCard from "../ServiceMoreCard/ServiceMoreCard";
+import AppText from "../AppText/AppText";
 
 export default function () {
   const textList = ["More than", "your average", "marketing", "agency"];
@@ -12,7 +13,7 @@ export default function () {
     "We are a full-service agency offering a complete suite of solutions, including strategic marketing consultancy, branding and rebranding, commercial photography and video production, digital marketing and management, and web design and development, all tailored to elevate and distinguish your brand.";
 
   return (
-    <div
+    <Box
       className="services-more-div"
       style={{ backgroundColor: colors.black }}
     >
@@ -28,19 +29,26 @@ export default function () {
 
       <Grid templateColumns="2fr 3fr" gap={6} my={10}>
         <VStack justify="start" align="start">
-          {textList.map((text) => {
-            return (
-              <Text
-                fontSize={60}
-                textAlign="left"
-                color={colors.white}
-                className="zen-antque-regular"
-                lineHeight={1.2}
-              >
-                {text}
-              </Text>
-            );
-          })}
+          <Text
+            fontSize={60}
+            textAlign="left"
+            color={colors.dark_gray}
+            className="zen-antque-regular"
+            lineHeight={1.2}
+          >
+            More than
+          </Text>
+          <Text
+            fontSize={60}
+            textAlign="left"
+            color={colors.white}
+            className="zen-antque-regular"
+            lineHeight={1.2}
+          >
+            your average <br />
+            marketing <br />
+            agency
+          </Text>
         </VStack>
         <Grid templaterows="1fr 1fr" gap={6}>
           <Flex alignItems="center" justifyContent="flex-start">
@@ -56,14 +64,9 @@ export default function () {
             </Text>
           </Flex>
           <Box>
-            <Text
-              fontSize={40}
-              textAlign="left"
-              color={colors.white}
-              className="zen-antque-regular"
-            >
+            <AppText fontSize={40} textAlign="left">
               Learn More
-            </Text>
+            </AppText>
           </Box>
         </Grid>
       </Grid>
@@ -80,7 +83,7 @@ export default function () {
           );
         })}
       </Wrap>
-    </div>
+    </Box>
   );
 }
 

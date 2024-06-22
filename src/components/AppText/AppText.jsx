@@ -1,9 +1,23 @@
 import React from "react";
 import "./AppText.css";
 
-export default function AppText({ children, fontSize }) {
+export default function AppText({
+  children,
+  fontSize,
+  textAlign = "center",
+  classNameCustom,
+}) {
+  if (classNameCustom) {
+    classNameCustom = `zen-antque-regular app-text ${classNameCustom}`;
+  } else {
+    classNameCustom = `zen-antque-regular app-text app-text-anim-no-move`;
+  }
+
   return (
-    <p className="zen-antque-regular app-text" style={{ fontSize: fontSize }}>
+    <p
+      className={classNameCustom}
+      style={{ fontSize: fontSize, textAlign: textAlign }}
+    >
       {children}
     </p>
   );

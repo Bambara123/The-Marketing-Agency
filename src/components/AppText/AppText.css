@@ -3,8 +3,12 @@
   color: #ffffff;
 }
 
-.app-text:hover {
+.app-text-anim:hover {
   animation: textHover 0.5s forwards;
+}
+
+.app-text-anim-no-move:hover {
+  animation: textHoverNoMove 0.5s forwards;
 }
 
 @keyframes textHover {
@@ -15,5 +19,14 @@
   100% {
     color: #ff4500;
     transform: translateY(-1px);
+  }
+}
+
+@keyframes textHoverNoMove {
+  50% {
+    color: #ffa07a;
+  }
+  100% {
+    color: #ff4500;
   }
 }

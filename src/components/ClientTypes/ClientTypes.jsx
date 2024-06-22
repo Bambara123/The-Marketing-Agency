@@ -4,6 +4,8 @@ import colors from "../../config/colors";
 import AppText from "../AppText/AppText";
 import Marquee from "react-fast-marquee";
 import "./ClientTypes.css";
+import Logo from "./Logo";
+import { logosToSlide } from "../../mockData/mockdata";
 
 export default function ClientTypes() {
   return (
@@ -19,62 +21,25 @@ export default function ClientTypes() {
       </Text>
       <Box>
         <HStack justify="center" spacing="50px">
-          <AppText>Hospitality and Touarism</AppText>
-          <AppText>Startups</AppText>
+          <AppText classNameCustom="app-text-anim">
+            Hospitality and Touarism
+          </AppText>
+          <AppText classNameCustom="app-text-anim">Startups</AppText>
         </HStack>
         <HStack justify="center" spacing="50px">
-          <AppText>Corporations</AppText>
-          <AppText>Food and Beverage</AppText>
+          <AppText classNameCustom="app-text-anim">Corporations</AppText>
+          <AppText classNameCustom="app-text-anim">Food and Beverage</AppText>
         </HStack>
         <HStack justify="center" spacing="50px">
-          <AppText>Health</AppText>
-          <AppText>Tech</AppText>
-          <AppText>NGOs</AppText>
+          <AppText classNameCustom="app-text-anim">Health</AppText>
+          <AppText classNameCustom="app-text-anim"> Tech</AppText>
+          <AppText classNameCustom="app-text-anim">NGOs</AppText>
         </HStack>
       </Box>
-      <Marquee>
-        <div className="slide">
-          <img
-            src={process.env.PUBLIC_URL + "/logos/Carlsburg.svg"}
-            alt=""
-            height="100px"
-          />
-        </div>
-        <div className="slide">
-          <img
-            src={process.env.PUBLIC_URL + "/logos/Carlsburg.svg"}
-            alt=""
-            height="100px"
-          />
-        </div>
-        <div className="slide">
-          <img
-            src={process.env.PUBLIC_URL + "/logos/Carlsburg.svg"}
-            alt=""
-            height="100px"
-          />
-        </div>
-        <div className="slide">
-          <img
-            src={process.env.PUBLIC_URL + "/logos/Carlsburg.svg"}
-            alt=""
-            height="100px"
-          />
-        </div>
-        <div className="slide">
-          <img
-            src={process.env.PUBLIC_URL + "/logos/Carlsburg.svg"}
-            alt=""
-            height="100px"
-          />
-        </div>
-        <div className="slide">
-          <img
-            src={process.env.PUBLIC_URL + "/logos/Carlsburg.svg"}
-            alt=""
-            height="100px"
-          />
-        </div>
+      <Marquee style={{ paddingTop: "200px" }}>
+        {logosToSlide.map((logo, index) => (
+          <Logo key={index} logoUrl={logo} />
+        ))}
       </Marquee>
     </div>
   );

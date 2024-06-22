@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .scaling-div {
+        display: inline-block;
+        padding: 20px;
+        background-color: lightblue;
+        animation: scaleAnimation 2s infinite alternate;
+        position: relative;
+        overflow: hidden;
+        will-change: transform;
+      }
+
+      @keyframes scaleAnimation {
+        from {
+          transform: scale(1);
+        }
+        to {
+          transform: scale(2);
+        }
+      }
+
+      .scaling-div span {
+        display: inline-block;
+        transform-origin: center center;
+        transform: scale(0.833); /* Counteract the parent scaling */
+        will-change: transform;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="scaling-div">
+      <span>This is the text inside the div</span>
+    </div>
+  </body>
+</html>

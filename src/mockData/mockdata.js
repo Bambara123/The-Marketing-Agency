@@ -126,3 +126,16 @@ export const testimonials = [
     since: "Client since 2015",
   },
 ];
+
+export const logosToSlide = [
+  "logo_1.svg",
+  "logo_2.svg",
+  "logo_3.svg",
+  "logo_4.svg",
+  "logo_5.svg",
+  "logo_6.svg",
+  "logo_7.svg",
+  "logo_8.svg",
+  "logo_9.svg",
+  "logo_10.svg",
+];
