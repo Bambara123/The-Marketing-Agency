@@ -14,6 +14,20 @@ export default function () {
       });
     }, 1000);
 
+    document.addEventListener("scroll", (e) => {
+      if (window.scrollY < 300) {
+        document.querySelector(".header").style.position = "fixed";
+        const circle_radius = (window.scrollY / 300) * (40 * window.innerWidth / window.innerHeight) + 45;
+        document.querySelector(".circle_mask").style = `clip-path:circle(${circle_radius}vh at 50% 50%) !important; animation:unset`;
+        document.querySelector(".invert").style = `clip-path:circle(${circle_radius}vh at 50% 50%) !important; animation:unset`;
+        document.body.style.paddingTop = "0px";
+      }
+      else{
+        document.querySelector(".header").style.position = "relative";
+        document.body.style.paddingTop = "300px";
+      }
+    });
+
     // Cleanup function to clear the timeout if the component unmounts before the timeout finishes
     return () => clearTimeout(timer);
   }, []); // Empty dependency array means this effect runs once on mount and cleans up on unmount
