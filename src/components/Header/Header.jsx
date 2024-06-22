@@ -1,6 +1,7 @@
 import React from "react";
 import "./Header.css";
 import { useEffect } from "react";
+import HeaderTop from "../HeaderTop/HeaderTop";
 
 export default function () {
   useEffect(() => {
@@ -17,12 +18,18 @@ export default function () {
     document.addEventListener("scroll", (e) => {
       if (window.scrollY < 300) {
         document.querySelector(".header").style.position = "fixed";
-        const circle_radius = (window.scrollY / 300) * (40 * window.innerWidth / window.innerHeight) + 45;
-        document.querySelector(".circle_mask").style = `clip-path:circle(${circle_radius}vh at 50% 50%) !important; animation:unset`;
-        document.querySelector(".invert").style = `clip-path:circle(${circle_radius}vh at 50% 50%) !important; animation:unset`;
+        const circle_radius =
+          (window.scrollY / 300) *
+            ((40 * window.innerWidth) / window.innerHeight) +
+          45;
+        document.querySelector(
+          ".circle_mask"
+        ).style = `clip-path:circle(${circle_radius}vh at 50% 50%) !important; animation:unset`;
+        document.querySelector(
+          ".invert"
+        ).style = `clip-path:circle(${circle_radius}vh at 50% 50%) !important; animation:unset`;
         document.body.style.paddingTop = "0px";
-      }
-      else{
+      } else {
         document.querySelector(".header").style.position = "relative";
         document.body.style.paddingTop = "300px";
       }
@@ -33,6 +40,7 @@ export default function () {
   }, []); // Empty dependency array means this effect runs once on mount and cleans up on unmount
   return (
     <div class="header">
+      <HeaderTop></HeaderTop>
       <div class="bg_video">
         <img
           class="actual_file"

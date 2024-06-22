@@ -6,11 +6,13 @@ export default function AppText({
   fontSize,
   textAlign = "center",
   classNameCustom,
+  fontName = "zen-antque-regular",
+  dot,
 }) {
   if (classNameCustom) {
-    classNameCustom = `zen-antque-regular app-text ${classNameCustom}`;
+    classNameCustom = `${fontName} app-text ${classNameCustom} ${dot}`;
   } else {
-    classNameCustom = `zen-antque-regular app-text app-text-anim-no-move`;
+    classNameCustom = `${fontName} app-text app-text-anim-no-move  ${dot}`;
   }
 
   return (
