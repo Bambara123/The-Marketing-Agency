@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/The-Marketing-Agency/static/css/main.c2912be6.css",
-    "main.js": "/The-Marketing-Agency/static/js/main.fcf5aaf3.js",
+    "main.css": "/The-Marketing-Agency/static/css/main.04a431e9.css",
+    "main.js": "/The-Marketing-Agency/static/js/main.11496f8d.js",
     "static/js/453.935f81cd.chunk.js": "/The-Marketing-Agency/static/js/453.935f81cd.chunk.js",
     "static/media/ZenAntique-Regular.woff": "/The-Marketing-Agency/static/media/ZenAntique-Regular.c2602ddb85fb8d01fa0f.woff",
     "static/media/red-hat.text-medium.ttf": "/The-Marketing-Agency/static/media/red-hat.text-medium.5edcccb933b9f67de787.ttf",
     "static/media/red-hat.text.ttf": "/The-Marketing-Agency/static/media/red-hat.text.34357ef2d8d884c7bfe4.ttf",
     "index.html": "/The-Marketing-Agency/index.html",
-    "main.c2912be6.css.map": "/The-Marketing-Agency/static/css/main.c2912be6.css.map",
-    "main.fcf5aaf3.js.map": "/The-Marketing-Agency/static/js/main.fcf5aaf3.js.map",
+    "main.04a431e9.css.map": "/The-Marketing-Agency/static/css/main.04a431e9.css.map",
+    "main.11496f8d.js.map": "/The-Marketing-Agency/static/js/main.11496f8d.js.map",
     "453.935f81cd.chunk.js.map": "/The-Marketing-Agency/static/js/453.935f81cd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c2912be6.css",
-    "static/js/main.fcf5aaf3.js"
+    "static/css/main.04a431e9.css",
+    "static/js/main.11496f8d.js"
   ]
 }
