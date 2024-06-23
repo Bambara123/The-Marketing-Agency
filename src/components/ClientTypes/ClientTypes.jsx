@@ -1,5 +1,5 @@
 import React from "react";
-import { HStack, Text, Box } from "@chakra-ui/react";
+import { HStack, Text, Box, VStack } from "@chakra-ui/react";
 import colors from "../../config/colors";
 import AppText from "../AppText/AppText";
 import Marquee from "react-fast-marquee";
@@ -9,17 +9,19 @@ import { logosToSlide } from "../../mockData/mockdata";
 
 export default function ClientTypes() {
   return (
-    <div className="client-types" style={{ backgroundColor: colors.black }}>
+    <div
+      className="client-types"
+      style={{ backgroundColor: colors.black, paddingTop: "160px" }}
+    >
       <Text
-        pt={65}
-        pb={65}
+        pb={157}
         className="zen-antque-regular"
         color={colors.gray}
         fontSize={23}
       >
         Selected types of clients we have worked with
       </Text>
-      <Box>
+      <VStack spacing="40px">
         <HStack justify="center" spacing="50px">
           <AppText classNameCustom="app-text-anim">
             Hospitality and Touarism
@@ -35,8 +37,8 @@ export default function ClientTypes() {
           <AppText classNameCustom="app-text-anim"> Tech</AppText>
           <AppText classNameCustom="app-text-anim">NGOs</AppText>
         </HStack>
-      </Box>
-      <Marquee style={{ paddingTop: "200px" }} speed="100">
+      </VStack>
+      <Marquee style={{ paddingTop: "148px" }} speed="100">
         {logosToSlide.map((logo, index) => (
           <Logo key={index} logoUrl={logo} />
         ))}

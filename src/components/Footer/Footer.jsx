@@ -21,11 +21,11 @@ export default function Footer() {
     "Testimonials",
   ];
   return (
-    <Box className="footer">
-      <Box pb={100} px={"120px"}>
+    <Box className="footer" pt={160}>
+      <Box px={"120px"}>
         <Divider color={colors.dark_gray}></Divider>
         <Grid
-          mt={5}
+          mt={"60px"}
           templateColumns="repeat(8,1fr)"
           templateRows="repeat(1,1fr)"
           gap={4}
@@ -136,7 +136,7 @@ export default function Footer() {
           </GridItem>
         </Grid>
       </Box>
-      <Divider></Divider>
+      <Divider mt={120}></Divider>
       <HStack py={4} px={"80px"} justify="space-between">
         <Text color={colors.white} className="red-hat-text" fontSize={18}>
           The Marketing Agency

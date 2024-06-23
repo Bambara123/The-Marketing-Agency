@@ -8,7 +8,14 @@ import { serviceTypesList } from "../../mockData/mockdata";
 export default function ServiceTypes() {
   return (
     <div className="service-types" style={{ backgroundColor: colors.black }}>
-      <Wrap spacing="120px" align="center" justify="center" p={30}>
+      <Wrap
+        spacingX={60}
+        spacingY={90}
+        align="center"
+        justify="center"
+        pt={153}
+        pb={190}
+      >
         {serviceTypesList.map((serviceType) => {
           return (
             <WrapItem>

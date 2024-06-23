@@ -8,17 +8,20 @@ import "./Testimonial.css";
 
 export default function Testimonial() {
   return (
-    <div className="testimonial-dev" style={{ backgroundColor: colors.black }}>
+    <div
+      className="testimonial-dev"
+      style={{ backgroundColor: colors.black, paddingTop: "157px" }}
+    >
       <Divider></Divider>
       <Text
-        py={10}
+        mt={160}
         fontSize={69}
         className="zen-antque-regular"
         color={colors.white}
       >
         They Love Us
       </Text>
-      <Wrap spacing={16} justify={"center"}>
+      <Wrap spacing={16} justify={"center"} pt={177}>
         {testimonials.map((testimonial, index) => {
           return (
             <TestimonialCard

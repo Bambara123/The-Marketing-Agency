@@ -19,14 +19,14 @@ export default function () {
       <Text
         color={colors.dark_gray}
         fontSize={23}
+        paddingY={120}
         className="zen-antque-regular"
-        my={40}
       >
         Customer Feedback and Portfolio
       </Text>
       <Divider orientation="horizontal" />
 
-      <Grid templateColumns="2fr 3fr" gap={6} my={10}>
+      <Grid templateColumns="2fr 3fr" gap={6} mt={120}>
         <VStack justify="start" align="start">
           <Text
             fontSize={69}
@@ -69,7 +69,7 @@ export default function () {
           </Box>
         </Grid>
       </Grid>
-      <Wrap spacing={10} align="center" justify="center" p={30}>
+      <Wrap spacing={10} align="center" justify="center" py={30} mt={106}>
         {serviceMoreCardData.map((data) => {
           return (
             <ServiceMoreCard

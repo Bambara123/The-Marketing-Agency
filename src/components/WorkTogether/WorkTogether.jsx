@@ -6,23 +6,23 @@ import "./WorkTogether.css";
 
 export default function WorkTogether() {
   return (
-    <Box
-      className="worktogether-dev"
-      bg={colors.black}
-      py={"30px"}
-      px={"120px"}
-    >
+    <Box className="worktogether-dev" bg={colors.black} pt={156} px={"120px"}>
       <VStack>
         <Divider></Divider>
         <Text
           className="red-hat-text"
           color={colors.dark_gray}
           fontSize={27}
-          mt={10}
+          mt={155}
         >
           Tell Us About Your Project
         </Text>
-        <Text className="zen-antque-regular" color={colors.white} fontSize={80}>
+        <Text
+          mt={20}
+          className="zen-antque-regular"
+          color={colors.white}
+          fontSize={80}
+        >
           Let's work together.
         </Text>
         <HStack spacing={10}>
