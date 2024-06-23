@@ -18,7 +18,7 @@ export default function TestimonialCard({
           color={colors.dark_gray}
           fontWeight={500}
           textAlign="left"
-          fontSize={19}
+          fontSize={16}
         >
           {feedback}
         </Text>
@@ -34,6 +34,7 @@ export default function TestimonialCard({
           className="zen-antque-regular"
           color={colors.white}
           textAlign="left"
+          fontSize={16}
         >
           {name}
         </Text>
@@ -41,6 +42,7 @@ export default function TestimonialCard({
           className="red-hat-text"
           color={colors.dark_gray}
           fontWeight={600}
+          fontSize={16}
           textAlign="left"
         >
           {position}

@@ -31,7 +31,9 @@ export default function ServiceTypes() {
         variant="outline"
         color={colors.white}
       >
-        <Text className="zen-antque-regular">More</Text>
+        <Text className="zen-antque-regular" fontSize={16}>
+          More
+        </Text>
       </Button>
     </div>
   );

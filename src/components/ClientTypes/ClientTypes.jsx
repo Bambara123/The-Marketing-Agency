@@ -15,7 +15,7 @@ export default function ClientTypes() {
         pb={65}
         className="zen-antque-regular"
         color={colors.gray}
-        fontSize={20}
+        fontSize={23}
       >
         Selected types of clients we have worked with
       </Text>

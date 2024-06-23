@@ -45,6 +45,7 @@ export default function WorkTogetherSmall() {
           textAlign="right"
           color={colors.white}
           className="red-hat-text"
+          fontSize={14}
           mt={6}
           lineHeight={1.2}
           mb={2}

@@ -23,7 +23,7 @@ export default function ServiceMoreCard({
         <Text
           textAlign="left"
           color={colors.white}
-          fontSize={45}
+          fontSize={39}
           className="zen-antque-regular"
           lineHeight={1}
         >
@@ -33,7 +33,7 @@ export default function ServiceMoreCard({
         <Text
           textAlign="left"
           color={colors.white}
-          fontSize={15}
+          fontSize={16}
           className="red-hat-text-bold"
         >
           {subtitle}
@@ -63,7 +63,7 @@ export default function ServiceMoreCard({
         >
           {desc3}
         </Text>
-        <AppText fontSize={26}>Learn More</AppText>
+        <AppText fontSize={23}>Learn More</AppText>
       </VStack>
     </Box>
   );

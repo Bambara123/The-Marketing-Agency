@@ -3,7 +3,7 @@ import "./AppText.css";
 
 export default function AppText({
   children,
-  fontSize,
+  fontSize = 69,
   textAlign = "center",
   classNameCustom,
   fontName = "zen-antque-regular",

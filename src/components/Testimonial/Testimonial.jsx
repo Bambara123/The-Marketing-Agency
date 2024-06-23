@@ -12,7 +12,7 @@ export default function Testimonial() {
       <Divider></Divider>
       <Text
         py={10}
-        fontSize={60}
+        fontSize={69}
         className="zen-antque-regular"
         color={colors.white}
       >

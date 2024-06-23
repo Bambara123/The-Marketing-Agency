@@ -8,7 +8,6 @@ import ServiceMoreCard from "../ServiceMoreCard/ServiceMoreCard";
 import AppText from "../AppText/AppText";
 
 export default function () {
-  const textList = ["More than", "your average", "marketing", "agency"];
   const textDescription =
     "We are a full-service agency offering a complete suite of solutions, including strategic marketing consultancy, branding and rebranding, commercial photography and video production, digital marketing and management, and web design and development, all tailored to elevate and distinguish your brand.";
 
@@ -19,7 +18,7 @@ export default function () {
     >
       <Text
         color={colors.dark_gray}
-        fontSize={20}
+        fontSize={23}
         className="zen-antque-regular"
         my={40}
       >
@@ -30,7 +29,7 @@ export default function () {
       <Grid templateColumns="2fr 3fr" gap={6} my={10}>
         <VStack justify="start" align="start">
           <Text
-            fontSize={60}
+            fontSize={69}
             textAlign="left"
             color={colors.dark_gray}
             className="zen-antque-regular"
@@ -39,7 +38,7 @@ export default function () {
             More than
           </Text>
           <Text
-            fontSize={60}
+            fontSize={69}
             textAlign="left"
             color={colors.white}
             className="zen-antque-regular"
@@ -53,7 +52,7 @@ export default function () {
         <Grid templaterows="1fr 1fr" gap={6}>
           <Flex alignItems="center" justifyContent="flex-start">
             <Text
-              fontSize={14}
+              fontSize={16}
               textAlign="left"
               color={colors.gray}
               className="red-hat-text"
@@ -64,7 +63,7 @@ export default function () {
             </Text>
           </Flex>
           <Box>
-            <AppText fontSize={40} textAlign="left">
+            <AppText fontSize={33} textAlign="left">
               Learn More
             </AppText>
           </Box>
@@ -86,15 +85,3 @@ export default function () {
     </Box>
   );
 }
-
-// {serviceMoreCardData.map((data) => {
-//   return (
-// <ServiceMoreCard
-//   title={data.title}
-//   subtitle={data.subtitle}
-//   desc1={data.desc1}
-//   desc2={data.desc2}
-//   desc3={data.desc3}
-// />
-//   );
-// })}

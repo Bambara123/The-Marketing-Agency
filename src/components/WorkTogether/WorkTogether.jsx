@@ -17,7 +17,7 @@ export default function WorkTogether() {
         <Text
           className="red-hat-text"
           color={colors.dark_gray}
-          fontSize={32}
+          fontSize={27}
           mt={10}
         >
           Tell Us About Your Project
@@ -29,7 +29,7 @@ export default function WorkTogether() {
           <Text
             className="zen-antque-regular"
             color={colors.orange}
-            fontSize={80}
+            fontSize={106}
           >
             Schedule a Call
           </Text>

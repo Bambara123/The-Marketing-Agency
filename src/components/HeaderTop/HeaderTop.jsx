@@ -34,7 +34,7 @@ export default function HeaderTop() {
             return (
               <Box py={2} className="link-box">
                 <AppText
-                  fontSize={18}
+                  fontSize={16}
                   fontName="red-hat-text"
                   dot="link-text-dot"
                 >
@@ -53,7 +53,7 @@ export default function HeaderTop() {
             borderBottomRightRadius={15}
             borderWidth={1}
           >
-            <Text className="red-hat-text " fontSize={20} color={colors.white}>
+            <Text className="red-hat-text " fontSize={16} color={colors.white}>
               Say Hello
             </Text>
           </Box>

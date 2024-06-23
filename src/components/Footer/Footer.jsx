@@ -34,7 +34,7 @@ export default function Footer() {
           <GridItem colSpan={3}>
             <Text
               textAlign="left"
-              fontSize={30}
+              fontSize={27}
               className="zen-antque-regular"
               color={colors.white}
             >
@@ -77,7 +77,7 @@ export default function Footer() {
             <VStack align="left" justify="space-between" h={"100%"}>
               <Text
                 textAlign="left"
-                fontSize={22}
+                fontSize={23}
                 className="zen-antque-regular"
                 color={colors.white}
                 mb={3}
@@ -91,7 +91,7 @@ export default function Footer() {
                       textAlign="left"
                       color={colors.dark_gray}
                       className="red-hat-text footer-subsection"
-                      fontSize={18}
+                      fontSize={16}
                       fontWeight={600}
                       mt={2}
                     >

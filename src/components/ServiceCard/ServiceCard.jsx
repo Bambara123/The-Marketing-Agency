@@ -12,13 +12,17 @@ export default function ServiceCard({ imageUrl, title_, subtitle }) {
             <Image src={process.env.PUBLIC_URL + imageUrl}></Image>
           </Box>
           <Text
-            fontSize="xl"
+            fontSize={23}
             color={colors.white}
             className="zen-antque-regular"
           >
             {title_}
           </Text>
-          <Text color={colors.dark_gray} className="red-hat-text-bold">
+          <Text
+            color={colors.dark_gray}
+            className="red-hat-text-bold"
+            fontSize={19}
+          >
             {subtitle}
           </Text>
         </VStack>
