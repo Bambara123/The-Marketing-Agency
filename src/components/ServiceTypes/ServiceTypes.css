@@ -3,6 +3,11 @@
   animation: pulseButton 2s ease-in-out infinite;
 }
 
+.service-types .button-anime:hover {
+  animation: buttonHover 0.5s forwards;
+  scale: 1.2;
+}
+
 @keyframes pulseButton {
   0% {
     transform: scale(1);
@@ -13,5 +18,16 @@
   }
   100% {
     transform: scale(1);
+  }
+}
+
+@keyframes buttonHover {
+  50% {
+    color: #ffa07a;
+    transform: translateY(0px);
+  }
+  100% {
+    color: #ff4500;
+    transform: translateY(-1px);
   }
 }

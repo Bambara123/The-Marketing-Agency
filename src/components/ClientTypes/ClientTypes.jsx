@@ -1,5 +1,5 @@
 import React from "react";
-import { HStack, Text, Box, VStack } from "@chakra-ui/react";
+import { HStack, Text, VStack } from "@chakra-ui/react";
 import colors from "../../config/colors";
 import AppText from "../AppText/AppText";
 import Marquee from "react-fast-marquee";

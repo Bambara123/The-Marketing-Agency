@@ -33,7 +33,7 @@ export default function WorkTogetherSmall() {
             <ArrowForwardIcon
               className="arrow"
               color={colors.white}
-              boxSize={"23px"}
+              boxSize={"24px"}
             ></ArrowForwardIcon>
           </div>
         </HStack>

@@ -102,7 +102,7 @@ export const testimonials = [
 
     name: "Sakith Rajapakhe",
     post: "Marketing Mannager",
-    brandlogo: "/logos/logo_1.svg",
+    brandlogo: "/logos/logo_3.svg",
     since: "Client since 2015",
   },
   {
@@ -112,7 +112,7 @@ export const testimonials = [
 
     name: "Shermila Botheju",
     post: "Director",
-    brandlogo: "/logos/logo_1.svg",
+    brandlogo: "/logos/logo_3.svg",
     since: "Client since 2015",
   },
   {
@@ -122,7 +122,7 @@ export const testimonials = [
 
     name: "Naveen Udukumbura",
     post: "Marketing Mannager",
-    brandlogo: "/logos/logo_1.svg",
+    brandlogo: "/logos/logo_3.svg",
     since: "Client since 2015",
   },
 ];

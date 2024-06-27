@@ -1,15 +1,18 @@
 .arrow-container {
   background-color: #dd582d;
   border-radius: 50%;
-  width: 23px;
-  height: 23px;
+  width: 24px;
+  height: 24px;
 }
 
 .arrow {
   transform: rotate(-45deg);
-  transition: transform 1s ease-in-out;
+  transition: transform 0.5s ease-in-out;
   z-index: 1;
+  margin-bottom: 4px;
 }
+
+/* this margin, becasue the arrow is not alligned properly */
 
 .arrow:hover {
   transform: rotate(0deg);

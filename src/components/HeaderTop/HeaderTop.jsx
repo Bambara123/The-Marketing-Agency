@@ -1,11 +1,11 @@
 import React from "react";
 import "./HeaderTop.css";
-import { Button, Flex, HStack, Text, Box, Image } from "@chakra-ui/react";
+import { HStack, Text, Box, Image } from "@chakra-ui/react";
 import colors from "../../config/colors";
 import AppText from "../AppText/AppText";
 
 export default function HeaderTop() {
-  const headerTopData = ["Home", "Service", "Culture"];
+  const headerTopData = ["Work", "Service", "Culture"];
 
   return (
     <div className="header-top">

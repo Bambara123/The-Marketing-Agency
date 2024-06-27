@@ -7,7 +7,7 @@ import { serviceMoreCardData } from "../../mockData/mockdata";
 import ServiceMoreCard from "../ServiceMoreCard/ServiceMoreCard";
 import AppText from "../AppText/AppText";
 
-export default function () {
+export default function ServicesMore() {
   const textDescription =
     "We are a full-service agency offering a complete suite of solutions, including strategic marketing consultancy, branding and rebranding, commercial photography and video production, digital marketing and management, and web design and development, all tailored to elevate and distinguish your brand.";
 

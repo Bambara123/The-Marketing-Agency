@@ -14,15 +14,11 @@ export default function WorkTogether() {
           color={colors.dark_gray}
           fontSize={27}
           mt={155}
+          fontWeight={600}
         >
           Tell Us About Your Project
         </Text>
-        <Text
-          mt={20}
-          className="zen-antque-regular"
-          color={colors.white}
-          fontSize={80}
-        >
+        <Text className="zen-antque-regular" color={colors.white} fontSize={80}>
           Let's work together.
         </Text>
         <HStack spacing={10}>

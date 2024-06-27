@@ -20,6 +20,9 @@ export default function Footer() {
     "Culture",
     "Testimonials",
   ];
+
+  const subsectionTitles = ["About", "About", "About"];
+
   return (
     <Box className="footer" pt={160}>
       <Box px={"120px"}>
@@ -44,98 +47,47 @@ export default function Footer() {
               Advertising
             </Text>
           </GridItem>
-          <GridItem colSpan={1}>
-            <VStack align="left" justify="space-between" h={"100%"}>
-              <Text
-                textAlign="left"
-                fontSize={22}
-                className="zen-antque-regular"
-                color={colors.white}
-                mb={3}
-              >
-                About
-              </Text>
-              <Box>
-                {subsections.map((subsection) => {
-                  return (
-                    <Text
-                      textAlign="left"
-                      color={colors.dark_gray}
-                      className="red-hat-text footer-subsection"
-                      fontSize={18}
-                      fontWeight={600}
-                      mt={2}
-                    >
-                      {subsection}
-                    </Text>
-                  );
-                })}
-              </Box>
-            </VStack>
-          </GridItem>
-          <GridItem colSpan={1}>
-            <VStack align="left" justify="space-between" h={"100%"}>
-              <Text
-                textAlign="left"
-                fontSize={23}
-                className="zen-antque-regular"
-                color={colors.white}
-                mb={3}
-              >
-                About
-              </Text>
-              <Box>
-                {subsections.map((subsection) => {
-                  return (
-                    <Text
-                      textAlign="left"
-                      color={colors.dark_gray}
-                      className="red-hat-text footer-subsection"
-                      fontSize={16}
-                      fontWeight={600}
-                      mt={2}
-                    >
-                      {subsection}
-                    </Text>
-                  );
-                })}
-              </Box>
-            </VStack>
-          </GridItem>
-          <GridItem colSpan={1}>
-            <VStack align="left" justify="space-between" h={"100%"}>
-              <Text
-                textAlign="left"
-                fontSize={22}
-                className="zen-antque-regular"
-                color={colors.white}
-                mb={3}
-              >
-                About
-              </Text>
-              <Box>
-                {subsections.map((subsection) => {
-                  return (
-                    <Text
-                      textAlign="left"
-                      color={colors.dark_gray}
-                      className="red-hat-text footer-subsection"
-                      fontSize={18}
-                      fontWeight={600}
-                      mt={2}
-                    >
-                      {subsection}
-                    </Text>
-                  );
-                })}
-              </Box>
-            </VStack>
-          </GridItem>
+
+          {subsectionTitles.map((subsectionTitle) => {
+            return (
+              <GridItem colSpan={1}>
+                <VStack align="left" justify="space-between" h={"100%"}>
+                  <Text
+                    textAlign="left"
+                    fontSize={22}
+                    className="zen-antque-regular"
+                    color={colors.white}
+                    mb={3}
+                  >
+                    {subsectionTitle}
+                  </Text>
+                  <Box>
+                    {subsections.map((subsection) => {
+                      return (
+                        <Text
+                          textAlign="left"
+                          color={colors.dark_gray}
+                          className="red-hat-text footer-subsection"
+                          fontSize={18}
+                          fontWeight={600}
+                          mt={2}
+                        >
+                          {subsection}
+                        </Text>
+                      );
+                    })}
+                  </Box>
+                </VStack>
+              </GridItem>
+            );
+          })}
+
           <GridItem colSpan={2}>
             <WorkTogetherSmall></WorkTogetherSmall>
           </GridItem>
         </Grid>
       </Box>
+
       <Divider mt={120}></Divider>
       <HStack py={4} px={"80px"} justify="space-between">
         <Text color={colors.white} className="red-hat-text" fontSize={18}>
