@@ -1,13 +1,13 @@
 import React from "react";
 import "./Home.css";
 
-import Header from "../components/Header/Header";
-import Footer from "../components/Footer/Footer";
-import ServiceTypes from "../components/ServiceTypes/ServiceTypes";
-import ClientTypes from "../components/ClientTypes/ClientTypes";
-import ServicesMore from "../components/ServicesMore/ServicesMore";
-import Testimonial from "../components/Testimonial/Testimonial";
-import WorkTogether from "../components/WorkTogether/WorkTogether";
+import Header from "../../components/Header/Header";
+import Footer from "../../components/Footer/Footer";
+import ServiceTypes from "../../components/ServiceTypes/ServiceTypes";
+import ClientTypes from "../../components/ClientTypes/ClientTypes";
+import ServicesMore from "../../components/ServicesMore/ServicesMore";
+import Testimonial from "../../components/Testimonial/Testimonial";
+import WorkTogether from "../../components/WorkTogether/WorkTogether";
 
 export default function Home() {
   return (

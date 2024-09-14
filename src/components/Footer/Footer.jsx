@@ -25,7 +25,7 @@ export default function Footer() {
 
   return (
     <Box className="footer" pt={160}>
-      <Box px={"120px"}>
+      <Box>
         <Divider color={colors.dark_gray}></Divider>
         <Grid
           mt={"60px"}

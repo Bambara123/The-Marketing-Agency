@@ -21,29 +21,22 @@ export default function ServiceMoreCard({
     >
       <VStack align="start" spacing={8}>
         <Text
-          textAlign="left"
-          color={colors.white}
-          fontSize={39}
-          className="zen-antque-regular"
+          className="zen-antque-regular text-left-white-header"
           lineHeight={1}
         >
           {title}
         </Text>
 
         <Text
-          textAlign="left"
           color={colors.white}
-          fontSize={16}
-          className="red-hat-text-bold"
+          className="red-hat-text-bold text-left-normal"
         >
           {subtitle}
         </Text>
 
         <Text
-          textAlign="left"
+          className="red-hat-text text-left-normal"
           color={colors.dark_gray}
-          className="red-hat-text"
-          fontSize={16}
         >
           {desc1}
         </Text>

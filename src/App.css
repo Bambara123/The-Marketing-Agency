@@ -68,3 +68,20 @@
   font-family: red-hat-text;
   font-weight: bold;
 }
+
+.text-left-white-header {
+  color: white;
+  text-align: left;
+  font-size: 39px;
+}
+
+.text-left-white-header-2 {
+  color: white;
+  text-align: left;
+  font-size: 23px;
+}
+
+.text-left-normal {
+  text-align: left;
+  font-size: 16px;
+}
