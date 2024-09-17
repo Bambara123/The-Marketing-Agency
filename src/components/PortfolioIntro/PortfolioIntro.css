@@ -15,3 +15,11 @@
   transform: rotate(0deg);
   z-index: 1;
 }
+
+.worktogether-dev {
+  background-image: radial-gradient(
+    ellipse 100% 100% at center 75%,
+    #101010 50%,
+    #dd582d 100%
+  );
+}

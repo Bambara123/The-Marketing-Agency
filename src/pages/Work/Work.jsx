@@ -11,12 +11,11 @@ import PortfolioIntro from "../../components/PortfolioIntro/PortfolioIntro";
 export default function Work() {
   return (
     <div className="work" style={{ backgroundColor: colors.black }}>
-      <HeaderTop></HeaderTop>
+      <section>
+        <PortfolioIntro></PortfolioIntro>
+      </section>
       <div className="work-main">
-        <section>
-          <PortfolioIntro></PortfolioIntro>
-        </section>
-        <section>
+        <section className="portfolio-writups-section">
           <PortfolioWriteups></PortfolioWriteups>
         </section>
         <section className="testimonnial">

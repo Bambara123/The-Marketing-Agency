@@ -1,4 +1,9 @@
-.work {
+.work-main {
   padding-left: 120px;
   padding-right: 120px;
+}
+
+.portfolio-writups-section {
+  margin-left: 120px;
+  margin-right: 120px;
 }

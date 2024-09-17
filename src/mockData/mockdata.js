@@ -102,7 +102,7 @@ export const testimonials = [
 
     name: "Sakith Rajapakhe",
     post: "Marketing Mannager",
-    brandlogo: "/logos/logo_3.svg",
+    brandlogo: "/logos/logo_3_john_keels.svg",
     since: "Client since 2015",
   },
   {
@@ -112,7 +112,7 @@ export const testimonials = [
 
     name: "Shermila Botheju",
     post: "Director",
-    brandlogo: "/logos/logo_3.svg",
+    brandlogo: "/logos/logo_3_john_keels.svg",
     since: "Client since 2015",
   },
   {
@@ -122,20 +122,20 @@ export const testimonials = [
 
     name: "Naveen Udukumbura",
     post: "Marketing Mannager",
-    brandlogo: "/logos/logo_3.svg",
+    brandlogo: "/logos/logo_3_john_keels.svg",
     since: "Client since 2015",
   },
 ];
 
 export const logosToSlide = [
   "logo_1.svg",
-  "logo_2.svg",
-  "logo_3.svg",
-  "logo_4.svg",
-  "logo_5.svg",
-  "logo_6.svg",
-  "logo_7.svg",
-  "logo_8.svg",
-  "logo_9.svg",
-  "logo_10.svg",
+  "logo_10_ceylon_tropical.svg",
+  "logo_2_lolc.svg",
+  "logo_3_john_keels.svg",
+  "logo_4_carsburg.svg",
+  "logo_5_advatis.svg",
+  "logo_8_dentz.svg",
+  "logo_6_lion.svg",
+  "logo_7_singer.svg",
+  "logo_9_moon_river.svg",
 ];

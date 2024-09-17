@@ -70,9 +70,10 @@ export default function ServicesMore() {
         </Grid>
       </Grid>
       <Wrap spacing={10} align="center" justify="center" py={30} mt={106}>
-        {serviceMoreCardData.map((data) => {
+        {serviceMoreCardData.map((data, index) => {
           return (
             <ServiceMoreCard
+              key={index}
               title={data.title}
               subtitle={data.subtitle}
               desc1={data.desc1}

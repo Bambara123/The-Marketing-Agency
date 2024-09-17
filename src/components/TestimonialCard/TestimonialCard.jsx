@@ -1,6 +1,6 @@
 import { VStack, Box, Text, Avatar, Image, Divider } from "@chakra-ui/react";
 import React from "react";
-import colors from "../config/colors";
+import colors from "../../config/colors";
 
 export default function TestimonialCard({
   feedback,

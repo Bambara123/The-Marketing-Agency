@@ -39,35 +39,34 @@ export default function () {
     return () => clearTimeout(timer);
   }, []); // Empty dependency array means this effect runs once on mount and cleans up on unmount
   return (
-    <div class="header">
-      <HeaderTop></HeaderTop>
-      <div class="bg_video">
+    <div className="header">
+      <div className="bg_video">
         <img
-          class="actual_file"
+          className="actual_file"
           src={process.env.PUBLIC_URL + "/background_video.png"}
           alt=""
         />
-        <div class="filter-blur"></div>
+        <div className="filter-blur"></div>
       </div>
-      <div class="bg_video_masked">
+      <div className="bg_video_masked">
         <img
           src={process.env.PUBLIC_URL + "/background_video.png"}
           alt=""
-          class="circle_mask actual_file"
+          className="circle_mask actual_file"
         />
       </div>
-      <h1 class="title">
+      <h1 className="title">
         The <br />
         Marketing <br />
         Agency
       </h1>
-      <div class="invert">
+      <div className="invert">
         <img
           src={process.env.PUBLIC_URL + "/background_video.png"}
           alt=""
-          class="actual_file"
+          className="actual_file"
         />
-        <h1 class="title">
+        <h1 className="title">
           The <br />
           Marketing <br />
           Agency

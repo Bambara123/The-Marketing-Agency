@@ -3,6 +3,8 @@
 }
 
 .footer {
+  padding-left: 120px;
+  padding-right: 120px;
   background-image: radial-gradient(
     ellipse 50% 50% at center 115%,
     #dd582d 40%,

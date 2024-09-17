@@ -1,7 +1,7 @@
 import React from "react";
 
 import { testimonials } from "../../mockData/mockdata";
-import TestimonialCard from "../../TestimonialCard/TestimonialCard";
+import TestimonialCard from "../TestimonialCard/TestimonialCard";
 import { Divider, Wrap, Text } from "@chakra-ui/react";
 import colors from "../../config/colors";
 import "./Testimonial.css";

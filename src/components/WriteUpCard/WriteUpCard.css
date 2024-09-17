@@ -1,0 +1,43 @@
+.writeup-card {
+  border-radius: 50px !important;
+  background-color: #181818 !important;
+  width: 100% !important;
+  transition: transform 0.7s ease-in-out !important;
+  border-width: 1px;
+  border-color: #181818;
+  opacity: 0.4;
+}
+
+.writeup-card.scaled {
+  transform: scale(1.1);
+  animation: borderHover 2s forwards;
+  opacity: 1;
+}
+
+.writeup-card:hover {
+  animation: borderHover 2s forwards;
+}
+
+.truncated-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+}
+
+@keyframes borderHover {
+  0% {
+    border-width: 1px;
+    border-color: #fad2c2;
+  }
+  50% {
+    border-width: 1px;
+    border-color: #fc8d65;
+  }
+  100% {
+    border-width: 1px;
+    border-color: #fc8a60;
+  }
+}

@@ -48,9 +48,9 @@ export default function Footer() {
             </Text>
           </GridItem>
 
-          {subsectionTitles.map((subsectionTitle) => {
+          {subsectionTitles.map((subsectionTitle, index) => {
             return (
-              <GridItem colSpan={1}>
+              <GridItem colSpan={1} key={index}>
                 <VStack align="left" justify="space-between" h={"100%"}>
                   <Text
                     textAlign="left"
@@ -62,9 +62,10 @@ export default function Footer() {
                     {subsectionTitle}
                   </Text>
                   <Box>
-                    {subsections.map((subsection) => {
+                    {subsections.map((subsection, index) => {
                       return (
                         <Text
+                          key={index}
                           textAlign="left"
                           color={colors.dark_gray}
                           className="red-hat-text footer-subsection"

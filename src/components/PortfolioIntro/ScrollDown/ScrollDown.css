@@ -1,0 +1,34 @@
+.scroll-container .scroll-container-outer {
+  background-color: #fe9e7e;
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: ripple 5s infinite;
+  position: relative;
+  z-index: 3;
+}
+
+.scroll-container .scroll-container-outer .arrow-container-inner {
+  background-color: #dd582d;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes ripple {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}

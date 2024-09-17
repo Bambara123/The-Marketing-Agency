@@ -3,17 +3,20 @@ import "./HeaderTop.css";
 import { HStack, Text, Box, Image } from "@chakra-ui/react";
 import colors from "../../config/colors";
 import AppText from "../AppText/AppText";
+import { Link } from "react-router-dom";
 
 export default function HeaderTop() {
   const headerTopData = ["Work", "Service", "Culture"];
+  const theMarketingAgencyRoute = "/The-Marketing-Agency/";
 
   return (
     <div className="header-top">
       <HStack justify="space-between">
         <HStack className="logo-container">
-          {["logo-icon", "logo-text"].map((data) => {
+          {["logo-icon", "logo-text"].map((data, index) => {
             return (
               <Image
+                key={index}
                 src={process.env.PUBLIC_URL + "/" + data + ".svg"}
                 alt="logo"
                 className={data}
@@ -30,17 +33,19 @@ export default function HeaderTop() {
           pl={10}
           borderRightWidth={0}
         >
-          {headerTopData.map((data) => {
+          {headerTopData.map((data, index) => {
             return (
-              <Box py={2} className="link-box">
-                <AppText
-                  fontSize={16}
-                  fontName="red-hat-text"
-                  dot="link-text-dot"
-                >
-                  {data}
-                </AppText>
-              </Box>
+              <Link to={theMarketingAgencyRoute + data} key={index}>
+                <Box key={index} py={2} className="link-box">
+                  <AppText
+                    fontSize={16}
+                    fontName="red-hat-text"
+                    dot="link-text-dot"
+                  >
+                    {data}
+                  </AppText>
+                </Box>
+              </Link>
             );
           })}
 
@@ -53,9 +58,15 @@ export default function HeaderTop() {
             borderBottomRightRadius={15}
             borderWidth={1}
           >
-            <Text className="red-hat-text " fontSize={16} color={colors.white}>
-              Say Hello
-            </Text>
+            <nav>
+              <Text
+                className="red-hat-text "
+                fontSize={16}
+                color={colors.white}
+              >
+                Say Hello
+              </Text>
+            </nav>
           </Box>
         </HStack>
       </HStack>

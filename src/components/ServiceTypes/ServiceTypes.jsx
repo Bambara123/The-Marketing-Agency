@@ -16,9 +16,9 @@ export default function ServiceTypes() {
         pt={153}
         pb={190}
       >
-        {serviceTypesList.map((serviceType) => {
+        {serviceTypesList.map((serviceType, index) => {
           return (
-            <WrapItem>
+            <WrapItem key={index}>
               <ServiceCard
                 imageUrl={serviceType.image}
                 title_={serviceType.title}

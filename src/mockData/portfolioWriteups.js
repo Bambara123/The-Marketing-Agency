@@ -1,7 +1,8 @@
-const portfolioWritups = [
+export const portfolioWritups = [
   {
     id: 1,
     companyName: "Dentz Avenue",
+    logo: "logo_8_dentz.svg",
     services: [
       "Consultancy",
       "Branding",
@@ -30,6 +31,7 @@ const portfolioWritups = [
   {
     id: 3,
     companyName: "Lion Brewery",
+    logo: "logo_6_lion.svg",
     services: ["Consultancy", "Branding", "Content Creation"],
     location: "Colombo | Sri Lanka",
     timePeriod: "2023 July",
@@ -40,6 +42,7 @@ const portfolioWritups = [
   {
     id: 4,
     companyName: "Carlsberg",
+    logo: "logo_4_carsburg.svg",
     services: ["Consultancy", "Web and App Development"],
     location: "Colombo | Sri Lanka",
     timePeriod: "2024 June",
@@ -50,6 +53,7 @@ const portfolioWritups = [
   {
     id: 5,
     companyName: "Moon River",
+    logo: "logo_9_moon_river.svg",
     services: ["Consultancy", "Content Creation", "Digital Marketing"],
     location: "Colombo | Sri Lanka",
     timePeriod: "2023 December",
@@ -151,6 +155,7 @@ const portfolioWritups = [
   {
     id: 15,
     companyName: "Ceylon Tropical Escapes",
+    logo: "logo_10_ceylon_tropical.svg",
     services: ["Consultancy", "Branding"],
     location: "",
     timePeriod: "",
@@ -168,6 +173,7 @@ const portfolioWritups = [
   },
   {
     id: 17,
+    logo: "logo_5_advatis.svg",
     companyName: "Advantis",
     services: ["Digital Marketing"],
     location: "",
