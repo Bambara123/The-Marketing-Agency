@@ -1,4 +1,6 @@
 import React from "react";
+import { useEffect } from "react";
+
 import "./Work.css";
 
 import Footer from "../../components/Footer/Footer";
@@ -8,12 +10,15 @@ import PortfolioWriteups from "../../components/PorfolioWriteups/PortfolioWriteu
 import colors from "../../config/colors";
 import PortfolioIntro from "../../components/PortfolioIntro/PortfolioIntro";
 
+import ArrowBlobAnime from "../../components/ArrowBlobAnime/ArrowBlobAnime";
+
 export default function Work() {
   return (
     <div className="work" style={{ backgroundColor: colors.black }}>
       <section>
         <PortfolioIntro></PortfolioIntro>
       </section>
+
       <div className="work-main">
         <section className="portfolio-writups-section">
           <PortfolioWriteups></PortfolioWriteups>

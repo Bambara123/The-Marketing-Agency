@@ -6,7 +6,7 @@ import AppText from "../AppText/AppText";
 import { Link } from "react-router-dom";
 
 export default function HeaderTop() {
-  const headerTopData = ["Work", "Service", "Culture"];
+  const headerTopData = ["Work", "Services", "Culture"];
   const theMarketingAgencyRoute = "/The-Marketing-Agency/";
 
   return (

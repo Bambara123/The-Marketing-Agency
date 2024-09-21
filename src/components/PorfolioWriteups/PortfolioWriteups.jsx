@@ -6,7 +6,7 @@ import { portfolioWritups } from "../../mockData/portfolioWriteups";
 export default function PortfolioWriteups() {
   return (
     <div className="portfolio-writeups">
-      <Wrap spacingY={20} pt={200} align="center" justify="center">
+      <Wrap spacingY={20} align="center" justify="center">
         {portfolioWritups.map((writeup, index) => (
           <WriteUpCard
             key={index}

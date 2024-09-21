@@ -1,15 +1,14 @@
 import React from "react";
-import { ArrowDownIcon } from "@chakra-ui/icons";
-import { useEffect, useRef } from "react";
-import "./ScrollDown.css"; // Ensure you have your CSS file
+import "./ScrollDown.css";
 
-export default function ScrollDown() {
+export default function ScrollDown({ onClick }) {
   return (
-    <div className="scroll-container">
-      <div className="scroll-container-outer">
-        <div className="arrow-container-inner">
-          <ArrowDownIcon boxSize={12} color="white" />
+    <div className="scroll-container" onClick={onClick}>
+      <div className="arrow-container-scroll animated fadeInDown">
+        <div className="arrow-inside">
+          <i className="fa fa-angle-down"></i>
         </div>
+        <div className="arrow-1-1 animated hinge infinite zoomIn"></div>
       </div>
     </div>
   );

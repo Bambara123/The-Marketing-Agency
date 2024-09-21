@@ -18,8 +18,36 @@
 
 .worktogether-dev {
   background-image: radial-gradient(
-    ellipse 100% 100% at center 75%,
-    #101010 50%,
+    ellipse 100% 130% at center 70%,
+    #101010 55%,
     #dd582d 100%
   );
+  width: 100%;
+}
+
+.scroll-container-intro {
+  position: relative;
+  padding: 100px 0 100px 0;
+}
+
+.blob-with-text {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blob-container {
+  position: absolute;
+}
+
+.blob-container-1 {
+  position: absolute;
+  top: 30px;
+}
+.portfolio-intro-1 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

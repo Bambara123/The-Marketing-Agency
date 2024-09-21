@@ -33,64 +33,50 @@ export const serviceTypesList = [
 
 export const serviceMoreCardData = [
   {
-    title: "Marketing Strategy and Consultancy",
-    subtitle: "Brand Manifesto. Positioning. Naming",
+    title: "Consultancy",
+    subtitle: "Research, Consultancy, and Marketing Strategy",
     desc1:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor",
+      "At The Marketing Agency, we offer comprehensive consultancy services designed to drive your business forward. Our team of experts conducts thorough research to understand your market, competitors, and audience.",
     desc2:
-      "incididunt ut labore et dolore magna aliqua. Ut enim adminim veniam, quis nostrud exercitation ullamco laborisnisi ut aliquip ex ea",
-    desc3:
-      "commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esseDuis aute irure dolorin reprehenderit in voluptate velit esse cillum dolore eufugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,",
+      "We provide strategic insights and actionable recommendations that align with your business goals. From market analysis to marketing strategy development, we ensure your business is equipped with the knowledge and tools needed to succeed.",
+    desc3: "",
   },
   {
-    title: "Marketing Strategy and Consultancy",
-    subtitle: "Brand Manifesto. Positioning. Naming",
+    title: "Branding",
+    subtitle: "Branding, Rebranding, and Visual Identity",
     desc1:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor",
+      "Your brand is your story, and we help you tell it effectively. Our branding services cover everything from creating new brand identities to revitalizing existing ones.",
     desc2:
-      "incididunt ut labore et dolore magna aliqua. Ut enim adminim veniam, quis nostrud exercitation ullamco laborisnisi ut aliquip ex ea",
-    desc3:
-      "commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esseDuis aute irure dolorin reprehenderit in voluptate velit esse cillum dolore eufugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,",
+      "We craft unique visual identities that reflect your brand's essence and resonate with your target audience. Whether you need a complete rebranding or just a fresh logo, The Marketing Agency ensures your brand stands out and leaves a lasting impression.",
+    desc3: "",
   },
   {
-    title: "Marketing Strategy and Consultancy",
-    subtitle: "Brand Manifesto. Positioning. Naming",
+    title: "Content Creation",
+    subtitle:
+      "Photography and Video Productions, Static and Dynamic Content Creation",
     desc1:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor",
+      "Content is king, and at The Marketing Agency, we excel in creating captivating content that engages and converts. Our content creation services include high-quality photography, professional video production, and dynamic content that captures attention.",
     desc2:
-      "incididunt ut labore et dolore magna aliqua. Ut enim adminim veniam, quis nostrud exercitation ullamco laborisnisi ut aliquip ex ea",
-    desc3:
-      "commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esseDuis aute irure dolorin reprehenderit in voluptate velit esse cillum dolore eufugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,",
+      "We produce both static and dynamic content tailored to your brand's voice and message, ensuring your audience stays engaged across all platforms.",
+    desc3: "",
   },
   {
-    title: "Marketing Strategy and Consultancy",
-    subtitle: "Brand Manifesto. Positioning. Naming",
+    title: "Digital Marketing",
+    subtitle: "Digital Marketing, Management, and Advertising",
     desc1:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor",
+      "In the digital age, effective marketing is essential for business growth. Our digital marketing services encompass everything from strategy and management to execution and optimization.",
     desc2:
-      "incididunt ut labore et dolore magna aliqua. Ut enim adminim veniam, quis nostrud exercitation ullamco laborisnisi ut aliquip ex ea",
-    desc3:
-      "commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esseDuis aute irure dolorin reprehenderit in voluptate velit esse cillum dolore eufugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,",
+      "We specialize in SEO, PPC, social media marketing, and online advertising, ensuring your brand reaches the right audience at the right time. The Marketing Agency's data-driven approach maximizes your ROI and helps your business thrive in the digital landscape.",
+    desc3: "",
   },
   {
-    title: "Marketing Strategy and Consultancy",
-    subtitle: "Brand Manifesto. Positioning. Naming",
+    title: "Web and App Development",
+    subtitle: "Website and Application Designing and Development",
     desc1:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor",
+      "A strong online presence is crucial, and our web and app development services ensure your business stands out. We design and develop responsive, user-friendly websites and mobile apps that provide seamless experiences.",
     desc2:
-      "incididunt ut labore et dolore magna aliqua. Ut enim adminim veniam, quis nostrud exercitation ullamco laborisnisi ut aliquip ex ea",
-    desc3:
-      "commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esseDuis aute irure dolorin reprehenderit in voluptate velit esse cillum dolore eufugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,",
-  },
-  {
-    title: "Marketing Strategy and Consultancy",
-    subtitle: "Brand Manifesto. Positioning. Naming",
-    desc1:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor",
-    desc2:
-      "incididunt ut labore et dolore magna aliqua. Ut enim adminim veniam, quis nostrud exercitation ullamco laborisnisi ut aliquip ex ea",
-    desc3:
-      "commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esseDuis aute irure dolorin reprehenderit in voluptate velit esse cillum dolore eufugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,",
+      "Our team combines creative design with advanced technology to deliver solutions tailored to your needs. From initial concept to launch and beyond, The Marketing Agency is your partner in achieving digital success.",
+    desc3: "",
   },
 ];
 

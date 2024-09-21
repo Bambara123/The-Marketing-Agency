@@ -1,0 +1,9 @@
+.cute-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.topelement {
+  position: absolute;
+}

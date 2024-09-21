@@ -13,7 +13,7 @@ export default function ServiceMoreCard({
 }) {
   return (
     <Box
-      style={{ width: "550px" }}
+      style={{ width: "550px", minHeight: "600px" }}
       p={10}
       bg={colors.card_black}
       borderRadius={15}
