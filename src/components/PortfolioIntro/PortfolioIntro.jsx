@@ -10,7 +10,7 @@ import ArrowBlobAnime from "../ArrowBlobAnime/ArrowBlobAnime";
 export default function PortfolioIntro() {
   const handleScrollDown = () => {
     window.scrollBy({
-      top: 500, // Adjust this value to scroll the desired distance
+      top: 500,
       behavior: "smooth",
     });
   };
@@ -44,7 +44,7 @@ export default function PortfolioIntro() {
       </Box>
 
       <div className="blob-container-1">
-        <ArrowBlobAnime></ArrowBlobAnime>
+        <ArrowBlobAnime idPrefix={"a"}></ArrowBlobAnime>
       </div>
     </div>
   );

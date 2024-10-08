@@ -1,7 +1,6 @@
 import React from "react";
 import "./Header.css";
 import { useEffect } from "react";
-import HeaderTop from "../HeaderTop/HeaderTop";
 
 export default function () {
   useEffect(() => {
@@ -15,7 +14,7 @@ export default function () {
       });
     }, 1000);
 
-    document.addEventListener("scroll", (e) => {
+    const handleScroll = () => {
       if (window.scrollY < 300) {
         document.querySelector(".header").style.position = "fixed";
         const circle_radius =
@@ -33,10 +32,15 @@ export default function () {
         document.querySelector(".header").style.position = "relative";
         document.body.style.paddingTop = "300px";
       }
-    });
+    };
+
+    document.addEventListener("scroll", handleScroll);
 
     // Cleanup function to clear the timeout if the component unmounts before the timeout finishes
-    return () => clearTimeout(timer);
+    return () => {
+      clearTimeout(timer);
+      document.removeEventListener("scroll", handleScroll);
+    };
   }, []); // Empty dependency array means this effect runs once on mount and cleans up on unmount
   return (
     <div className="header">

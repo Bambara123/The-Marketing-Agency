@@ -1,8 +1,9 @@
+import SwiperObj from "../../components/SwiperObj/SwiperObj";
+
 export default function Culture() {
   return (
     <div>
-      <p>asdsad</p>
-      <h1>Culture</h1>
+      <SwiperObj></SwiperObj>
     </div>
   );
 }
