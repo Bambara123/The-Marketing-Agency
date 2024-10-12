@@ -43,9 +43,9 @@ export default function PortfolioIntro() {
         </div>
       </Box>
 
-      <div className="blob-container-1">
+      {/* <div className="blob-container-1">
         <ArrowBlobAnime idPrefix={"a"}></ArrowBlobAnime>
-      </div>
+      </div> */}
     </div>
   );
 }
