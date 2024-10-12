@@ -1,5 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectCoverflow, Pagination } from "swiper/modules";
+import { EffectCoverflow, Pagination, Autoplay } from "swiper/modules";
+import { imagesWorkFun } from "../../mockData/mockdata";
 
 import "swiper/css";
 import "swiper/css/effect-coverflow";
@@ -15,27 +16,41 @@ export default function SwiperObj() {
         centeredSlides={true}
         slidesPerView={"auto"}
         coverflowEffect={{
-          rotate: 40,
+          rotate: 70,
           stretch: 0,
           depth: 100,
           modifier: 1,
           slideShadows: true,
         }}
-        pagination={true}
-        modules={[EffectCoverflow, Pagination]}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        easing="ease-in-out"
+        speed={1000}
+        loop={true}
+        modules={[EffectCoverflow, Pagination, Autoplay]}
         className="mySwiper"
       >
         <SwiperSlide>
-          <img src="https://www.pixelstalk.net/wp-content/uploads/images2/Computer-Wallpaper-HD-Free-download.jpg" />
+          <img
+            src={process.env.PUBLIC_URL + "/images/workfun/" + imagesWorkFun[0]}
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://th.bing.com/th/id/R.e6f2cedf317be31914a0057344eacd84?rik=lfjPJ3TUzOTvow&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f04%2fDesktop-computer-nature-wallpaper-hd.jpg&ehk=9aJz5cz8NKlzsXNWOSKRpzEd3Ez5IHxpkLjp8NZ%2fmXg%3d&risl=&pid=ImgRaw&r=0" />
+          <img
+            src={process.env.PUBLIC_URL + "/images/workfun/" + imagesWorkFun[1]}
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://www.pixelstalk.net/wp-content/uploads/images2/Computer-Wallpaper-HD-Free-download.jpg" />
+          <img
+            src={process.env.PUBLIC_URL + "/images/workfun/" + imagesWorkFun[2]}
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://www.pixelstalk.net/wp-content/uploads/images2/Computer-Wallpaper-HD-Free-download.jpg" />
+          <img
+            src={process.env.PUBLIC_URL + "/images/workfun/" + imagesWorkFun[3]}
+          />
         </SwiperSlide>
       </Swiper>
     </div>

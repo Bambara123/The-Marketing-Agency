@@ -90,11 +90,19 @@ export default function Footer() {
       </Box>
 
       <Divider mt={120}></Divider>
-      <HStack py={4} px={"80px"} justify="space-between">
-        <Text color={colors.white} className="red-hat-text" fontSize={18}>
+      <HStack py={4} justify="space-between">
+        <Text
+          color={colors.white}
+          className="red-hat-text footer-bottom-left"
+          fontSize={18}
+        >
           The Marketing Agency
         </Text>
-        <Text color={colors.white} className="red-hat-text" fontSize={18}>
+        <Text
+          color={colors.white}
+          className="red-hat-text footer-bottom-right"
+          fontSize={18}
+        >
           Since 2019
         </Text>
       </HStack>

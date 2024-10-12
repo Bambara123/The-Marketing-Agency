@@ -10,7 +10,10 @@ export default function ArrowBlobAnime({ idPrefix }) {
         `#${idPrefix}-blob1`,
         { path: `#${idPrefix}-blob1` },
         { path: `#${idPrefix}-blob2` },
-        { delay: 500, duration: 3000, easing: "easingCubicOut" }
+        {
+          duration: 3000,
+          easing: "easingCubicOut",
+        }
       );
 
       const tween2 = KUTE.fromTo(
@@ -20,24 +23,9 @@ export default function ArrowBlobAnime({ idPrefix }) {
         { duration: 3000, easing: "easingCubicOut" }
       );
 
-      const tween3 = KUTE.fromTo(
-        `#${idPrefix}-blob3`,
-        { path: `#${idPrefix}-blob3` },
-        { path: `#${idPrefix}-blob1` },
-        { duration: 3000, Infinity: true, yoyo: true, easing: "easingCubicOut" }
-      );
-
       tween1.chain(tween2);
-      tween2.chain(tween3);
-      tween3.chain(tween1);
 
       tween1.start();
-
-      return () => {
-        tween1.stop();
-        tween2.stop();
-        tween3.stop();
-      };
     }
   }, [idPrefix]);
 
@@ -78,3 +66,22 @@ export default function ArrowBlobAnime({ idPrefix }) {
     </div>
   );
 }
+{
+  /* <g transform="translate(479.2216150305812 289.1605579331862)">
+<path
+  id={`${idPrefix}-blob3`}
+  d="M110.8 -110.3C136.3 -85.3 144.7 -42.7 145.3 0.6C145.8 43.8 138.7 87.7 113.2 127.2C87.7 166.7 43.8 201.8 2.1 199.7C-39.6 197.6 -79.2 158.2 -113.7 118.7C-148.2 79.2 -177.6 39.6 -193.2 -15.6C-208.7 -70.7 -210.4 -141.4 -175.9 -166.4C-141.4 -191.4 -70.7 -170.7 -14 -156.7C42.7 -142.7 85.3 -135.3 110.8 -110.3"
+  fill="#dd582d"
+  stroke="#dd582d"
+  strokeWidth="8"
+  opacity={0.1}
+></path>
+</g>  */
+}
+
+// const tween3 = KUTE.fromTo(
+//   `#${idPrefix}-blob3`,
+//   { path: `#${idPrefix}-blob3` },
+//   { path: `#${idPrefix}-blob1` },
+//   { duration: 3000, Infinity: true, easing: "easingCubicOut" }
+// );

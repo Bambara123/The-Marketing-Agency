@@ -22,14 +22,14 @@ export default function PortfolioIntro() {
           <VStack spacing={10}>
             <div className="portfolio-intro-title"></div>
             <Text
-              className="zen-antque-regular"
+              className="zen-antque-regular kkkk"
               color={colors.white}
               fontSize={60}
             >
               Delivering Impactful Solutions
             </Text>
             <Text
-              className="zen-antque-regular"
+              className="zen-antque-regular kkkk"
               color={colors.orange}
               fontSize={75}
             >

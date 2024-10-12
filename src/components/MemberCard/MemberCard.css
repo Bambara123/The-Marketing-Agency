@@ -1,0 +1,51 @@
+.member-card {
+  height: 340px;
+  width: 260px;
+  border-radius: 15px;
+  display: flex;
+  padding: 0 20px;
+  align-items: center;
+  justify-content: center;
+  background-color: #181818;
+}
+
+.member-card:hover {
+  animation: borderHover 2s forwards;
+}
+
+.member-card .image-container .image {
+  height: 160px;
+  width: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.member-card .heading {
+  font-size: 16px;
+  color: white;
+}
+.member-card .subheading {
+  font-size: 16px;
+  font-weight: 600;
+  color: #c3c3c3;
+}
+
+.member-card .sub-subheading {
+  font-size: 16px;
+  color: #c3c3c3;
+}
+
+@keyframes borderHover {
+  0% {
+    border-width: 1px;
+    border-color: #fad2c2;
+  }
+  50% {
+    border-width: 1px;
+    border-color: #fc8d65;
+  }
+  100% {
+    border-width: 1px;
+    border-color: #fc8a60;
+  }
+}

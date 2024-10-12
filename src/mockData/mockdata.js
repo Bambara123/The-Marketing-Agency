@@ -125,3 +125,71 @@ export const logosToSlide = [
   "logo_7_singer.svg",
   "logo_9_moon_river.svg",
 ];
+export const teamMembers = [
+  {
+    name: "Nithya",
+    role: "Project Manager",
+    image: "man1.jpg",
+    expertise: ["Project Planning", "Team Management"],
+  },
+  {
+    name: "Hiran",
+    role: "Lead Developer",
+    image: "man1.jpg",
+    expertise: ["Software Architecture", "Code Review"],
+  },
+  {
+    name: "Shanilka",
+    role: "UI/UX Designer",
+    image: "man1.jpg",
+    expertise: ["Prototyping", "UI Design"],
+  },
+  {
+    name: "Chinthy",
+    role: "Backend Developer",
+    image: "man1.jpg",
+    expertise: ["Database Management", "API Development"],
+  },
+  {
+    name: "Chaminda",
+    role: "Frontend Developer",
+    image: "man1.jpg",
+    expertise: ["React", "CSS"],
+  },
+  {
+    name: "Lahiru",
+    role: "QA Engineer",
+    image: "man1.jpg",
+    expertise: ["Test Automation", "Bug Tracking"],
+  },
+  {
+    name: "Sakith",
+    role: "DevOps Engineer",
+    image: "man1.jpg",
+    expertise: ["CI/CD", "Infrastructure Management"],
+  },
+  {
+    name: "Ashan",
+    role: "Data Scientist",
+    image: "man1.jpg",
+    expertise: ["Data Analysis", "Machine Learning"],
+  },
+  {
+    name: "Ashen",
+    role: "Mobile Developer",
+    image: "man1.jpg",
+    expertise: ["iOS Development", "Android Development"],
+  },
+  {
+    name: "Intern",
+    role: "Intern",
+    image: "man1.jpg",
+    expertise: ["Learning", "Assisting"],
+  },
+];
+
+export const sectionHeaders = {
+  Members: "Meet Our Team",
+};
+
+export const imagesWorkFun = ["fun1.jpg", "fun2.jpg", "fun3.jpg", "fun4.jpg"];

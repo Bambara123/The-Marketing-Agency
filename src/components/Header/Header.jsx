@@ -30,7 +30,7 @@ export default function () {
         document.body.style.paddingTop = "0px";
       } else {
         document.querySelector(".header").style.position = "relative";
-        document.body.style.paddingTop = "300px";
+        // document.body.style.paddingTop = "300px";
       }
     };
 
