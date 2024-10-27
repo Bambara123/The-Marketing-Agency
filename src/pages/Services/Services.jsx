@@ -1,3 +1,4 @@
+import Process from "../../components/Process/Process";
 import ServicesMore from "../../components/ServicesMore/ServicesMore";
 import ServiceTypes from "../../components/ServiceTypes/ServiceTypes";
 import colors from "../../config/colors";
@@ -10,7 +11,9 @@ export default function Services() {
       <section>
         <ServicesMore shouldHaveTop={false}></ServicesMore>
       </section>
-      <section className="process"></section>
+      <section className="process">
+        <Process></Process>
+      </section>
     </div>
   );
 }

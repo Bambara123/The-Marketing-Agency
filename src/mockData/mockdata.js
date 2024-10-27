@@ -1,3 +1,5 @@
+import KillerHeader from "../components/KillerHeader/KillerHeader";
+
 export const serviceTypesList = [
   {
     title: "TBNX",
@@ -190,6 +192,8 @@ export const teamMembers = [
 
 export const sectionHeaders = {
   Members: "Meet Our Team",
+  KillerHeader:
+    "full-service marketing agency  Consultancy, Branding Advertising and Marketing. ",
 };
 
 export const imagesWorkFun = ["fun1.jpg", "fun2.jpg", "fun3.jpg", "fun4.jpg"];

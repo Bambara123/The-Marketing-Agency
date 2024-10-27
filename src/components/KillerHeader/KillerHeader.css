@@ -1,0 +1,89 @@
+.killer-header-dev {
+  padding-top: 200px;
+  padding-bottom: 100px;
+}
+
+.killer-header-dev .text-line-1 {
+  font-size: 100px;
+  color: white;
+  padding-right: 160px;
+  padding-bottom: -100px;
+}
+
+.killer-header-dev .text-line-2 {
+  font-size: 100px;
+  color: #ffffff;
+
+  /* color: #f7764c; */
+}
+
+.killer-header-dev .text-line-3 {
+  font-size: 100px;
+  color: white;
+}
+
+.killer-header-dev .container {
+  justify-content: center;
+  align-items: center;
+}
+
+.rotating-text-container {
+  width: 600px;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 30px;
+}
+
+.rotating-text {
+  font-size: 100px;
+  color: #f7764c;
+}
+.rotating-text p {
+  display: inline-flex;
+  margin: 0;
+  vertical-align: top;
+}
+.rotating-text p .word {
+  position: absolute;
+  display: flex;
+  opacity: 0;
+}
+.rotating-text p .word .letter {
+  transform-origin: center center 25px;
+}
+.rotating-text p .word .letter.out {
+  transform: rotateX(90deg);
+  transition: 0.32s cubic-bezier(0.6, 0, 0.7, 0.2);
+}
+.rotating-text p .word .letter.in {
+  transition: 0.38s ease;
+}
+.rotating-text p .word .letter.behind {
+  transform: rotateX(-90deg);
+}
+
+.w-1 {
+  color: rgb(255, 180, 142);
+}
+
+.w-2 {
+  color: rgb(250, 142, 88);
+}
+
+.w-3 {
+  color: rgb(253, 116, 48);
+}
+.w-4 {
+  color: rgb(252, 89, 8);
+}
+/* background: linear-gradient(
+    5deg,
+    #f7764c 20%,
+    transparent 20%,
+    transparent 20%,
+    white 21%,
+    white 40%,
+    transparent 41%,
+    transparent 41%,
+    #f7764c 41%
+  ); */

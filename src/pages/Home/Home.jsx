@@ -3,6 +3,7 @@ import "./Home.css";
 
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
+import KillerHeader from "../../components/KillerHeader/KillerHeader";
 import ServiceTypes from "../../components/ServiceTypes/ServiceTypes";
 import ClientTypes from "../../components/ClientTypes/ClientTypes";
 import ServicesMore from "../../components/ServicesMore/ServicesMore";
@@ -14,6 +15,9 @@ export default function Home() {
     <div className="home">
       <Header></Header>
       <div className="main">
+        <section className="killer-header">
+          <KillerHeader></KillerHeader>
+        </section>
         <section className="service-types">
           <ServiceTypes></ServiceTypes>
         </section>

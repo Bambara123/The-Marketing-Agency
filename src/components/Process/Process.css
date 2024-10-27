@@ -1,0 +1,77 @@
+.process-dev .process-header {
+  color: rgb(210, 210, 210);
+  font-weight: 600;
+  font-size: 100px;
+}
+
+.process-dev {
+  padding-bottom: 100px;
+}
+
+.process-dev .process-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.stack {
+  position: relative;
+  margin: 70px;
+}
+
+.opacity-container {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-image: url(../../../public/images/process/process.jpg);
+  background-size: cover;
+  opacity: 0.2;
+  background-repeat: no-repeat;
+}
+
+.process-dev .process-container .process-research,
+.process-strategy,
+.process-activation,
+.process-creative,
+.process-results {
+  background-color: rgb(254, 244, 244);
+  border: solid 4px #f7764c;
+  height: 200px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.process-dev .process-container .text {
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(0, 0, 0);
+}
+
+.process-dev .process-container {
+  .process-strategy {
+    border-top-right-radius: 50%;
+  }
+  .process-creative {
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+  }
+  .process-activation {
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+  }
+
+  .process-results {
+    border-radius: 50%;
+    background-color: #f7764c;
+    border: solid 4px #ffffff;
+
+    .text {
+      color: white;
+    }
+  }
+}
