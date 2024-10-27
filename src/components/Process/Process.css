@@ -1,11 +1,33 @@
-.process-dev .process-header {
-  color: rgb(210, 210, 210);
-  font-weight: 600;
-  font-size: 100px;
+.process-dev .wrapper {
+  height: 100%;
+  width: 100%;
 }
 
-.process-dev {
-  padding-bottom: 100px;
+.process-dev .process-header {
+  color: #fff;
+  font-weight: 600;
+  font-size: 100px;
+  background: linear-gradient(
+    to right,
+    white 1%,
+    rgb(252, 89, 8) 50%,
+    #f7764c 55%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 10s linear infinite;
+  display: inline-block;
+}
+
+@keyframes textclip {
+  to {
+    background-position: -200% center;
+  }
 }
 
 .process-dev .process-container {
@@ -14,11 +36,14 @@
   position: relative;
   align-items: center;
   margin-top: 40px;
+  height: 100%;
+  width: 100%;
 }
 
 .stack {
   position: relative;
   margin: 70px;
+  width: 100%;
 }
 
 .opacity-container {
@@ -32,46 +57,144 @@
 }
 
 .process-dev .process-container .process-research,
-.process-strategy,
-.process-activation,
-.process-creative,
-.process-results {
+.process-dev .process-container .process-strategy,
+.process-dev .process-container .process-activation,
+.process-dev .process-container .process-creative,
+.process-dev .process-container .process-results {
   background-color: rgb(254, 244, 244);
   border: solid 4px #f7764c;
-  height: 200px;
-  width: 200px;
+  width: 20%;
+  aspect-ratio: 1 / 1;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  animation: fadeIn 1s forwards;
 }
 
 .process-dev .process-container .text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   font-size: 20px;
   font-weight: 600;
-  color: rgb(0, 0, 0);
+  color: #000000;
+  text-align: center;
 }
 
-.process-dev .process-container {
-  .process-strategy {
-    border-top-right-radius: 50%;
-  }
-  .process-creative {
-    border-top-right-radius: 50%;
-    border-bottom-right-radius: 50%;
-  }
-  .process-activation {
-    border-top-right-radius: 50%;
-    border-bottom-right-radius: 50%;
-    border-bottom-left-radius: 50%;
-  }
+.process-dev .process-container .process-strategy {
+  border-top-right-radius: 50%;
+  animation: translateX 0.5s forwards;
+  animation-delay: 1s;
+}
 
-  .process-results {
-    border-radius: 50%;
-    background-color: #f7764c;
-    border: solid 4px #ffffff;
+.process-dev .process-container .process-creative {
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  animation: rotation 1s forwards;
+  animation-delay: 2s;
+}
 
-    .text {
-      color: white;
-    }
+.process-dev .process-container .process-activation {
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  animation: glowingBorder 1s forwards;
+  animation-delay: 3s;
+}
+
+.process-dev .process-container .process-results {
+  border-radius: 50%;
+  background-color: #f7764c;
+  border: solid 4px #ffffff;
+  animation-delay: 4s;
+}
+
+.process-dev .process-container .process-results .text {
+  color: white;
+}
+
+.process-dev .process-container .process-research {
+  animation-delay: 0s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes translateX {
+  0% {
+    transform: translateX(-8%);
+  }
+  15% {
+    transform: translateX(8%);
+  }
+  30% {
+    transform: translateX(0%);
+  }
+  45% {
+    transform: translateX(-8%);
+  }
+  70% {
+    transform: translateX(8%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes translateY {
+  0% {
+    transform: translateY(-8%);
+  }
+  15% {
+    transform: translateY(8%);
+  }
+  30% {
+    transform: translateY(0%);
+  }
+  45% {
+    transform: translateY(-8%);
+  }
+  70% {
+    transform: translateY(8%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes glowingBorder {
+  0% {
+    box-shadow: 0 0 3px #ff4500, 0 0 6px #ff4500, 0 0 9px #ff4500,
+      0 0 12px #ff4500;
+  }
+  50% {
+    box-shadow: 0 0 6px #ff4500, 0 0 12px #ff4500, 0 0 18px #ff4500,
+      0 0 24px #ff4500;
+  }
+  90% {
+    box-shadow: 0 0 3px #ff4500, 0 0 6px #ff4500, 0 0 9px #ff4500,
+      0 0 12px #ff4500;
+  }
+  100% {
+    box-shadow: 0 0 0 0, 0 0 0 0, 0 0 0 0, 0 0 0 0;
   }
 }

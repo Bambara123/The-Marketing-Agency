@@ -9,6 +9,7 @@ import ClientTypes from "../../components/ClientTypes/ClientTypes";
 import ServicesMore from "../../components/ServicesMore/ServicesMore";
 import Testimonial from "../../components/Testimonial/Testimonial";
 import WorkTogether from "../../components/WorkTogether/WorkTogether";
+import Process from "../../components/Process/Process";
 
 export default function Home() {
   return (
@@ -20,6 +21,9 @@ export default function Home() {
         </section>
         <section className="service-types">
           <ServiceTypes></ServiceTypes>
+        </section>
+        <section className="process">
+          <Process></Process>
         </section>
         <section className="clients">
           <ClientTypes></ClientTypes>

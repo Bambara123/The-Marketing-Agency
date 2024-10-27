@@ -14,7 +14,7 @@ export default function SwiperObj() {
       <Swiper
         effect={"coverflow"}
         centeredSlides={true}
-        slidesPerView={"auto"}
+        slidesPerView={3}
         coverflowEffect={{
           rotate: 70,
           stretch: 0,
@@ -31,6 +31,7 @@ export default function SwiperObj() {
         loop={true}
         modules={[EffectCoverflow, Pagination, Autoplay]}
         className="mySwiper"
+        initialSlide={1}
       >
         <SwiperSlide>
           <img

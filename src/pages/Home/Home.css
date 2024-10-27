@@ -1,7 +1,8 @@
 .work-together,
 .services-more,
 .testimonnial,
-.killer-header {
+.killer-header,
+.process {
   padding-left: 120px;
   padding-right: 120px;
   background-color: #101010;
@@ -9,4 +10,10 @@
 
 .killer-header {
   background: linear-gradient(to bottom, rgb(29, 12, 12) 20%, #101010 70%);
+}
+
+.process {
+  padding-top: 80px;
+  padding-left: 160px;
+  padding-right: 160px;
 }

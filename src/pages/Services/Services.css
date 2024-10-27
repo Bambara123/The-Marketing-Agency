@@ -1,4 +1,10 @@
 .process {
   padding-top: 80px;
-  padding-bottom: 200px;
+  padding-left: 120px;
+  padding-right: 120px;
+}
+
+.services-more {
+  padding-left: 120px;
+  padding-right: 120px;
 }

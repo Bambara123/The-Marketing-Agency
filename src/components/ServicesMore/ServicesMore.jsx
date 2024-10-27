@@ -1,5 +1,15 @@
 import React from "react";
-import { Text, Divider, Grid, Box, VStack, Wrap, Flex } from "@chakra-ui/react";
+import {
+  Text,
+  Divider,
+  Grid,
+  Box,
+  VStack,
+  Wrap,
+  Flex,
+  WrapItem,
+  GridItem,
+} from "@chakra-ui/react";
 import colors from "../../config/colors";
 import "./ServicesMore.css";
 
@@ -76,20 +86,28 @@ export default function ServicesMore({ shouldHaveTop = true }) {
         ""
       )}
 
-      <Wrap spacing={10} align="center" justify="center" py={30} mt={106}>
+      <Grid
+        templateColumns="1fr 1fr"
+        py={30}
+        mt={106}
+        rowGap={10}
+        marginX={100}
+      >
         {serviceMoreCardData.map((data, index) => {
           return (
-            <ServiceMoreCard
-              key={index}
-              title={data.title}
-              subtitle={data.subtitle}
-              desc1={data.desc1}
-              desc2={data.desc2}
-              desc3={data.desc3}
-            />
+            <GridItem style={{ display: "flex", justifyContent: "center" }}>
+              <ServiceMoreCard
+                key={index}
+                title={data.title}
+                subtitle={data.subtitle}
+                desc1={data.desc1}
+                desc2={data.desc2}
+                desc3={data.desc3}
+              />
+            </GridItem>
           );
         })}
-      </Wrap>
+      </Grid>
     </Box>
   );
 }
