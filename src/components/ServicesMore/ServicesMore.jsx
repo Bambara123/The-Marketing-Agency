@@ -31,51 +31,53 @@ export default function ServicesMore({ shouldHaveTop = true }) {
           {" "}
           <Text
             color={colors.dark_gray}
-            fontSize={23}
-            paddingY={120}
+            fontSize="1.5rem"
+            paddingY={["60px", "120px"]}
             className="zen-antque-regular"
           >
             Customer Feedback and Portfolio
           </Text>
           <Divider orientation="horizontal" />
-          <Grid templateColumns="2fr 3fr" gap={6} mt={120}>
+          <Grid templateColumns="3fr 1fr 4fr"  mt={["80px", "120px"]}>
             <VStack justify="start" align="start">
               <Text
-                fontSize={69}
-                textAlign="left"
-                color={colors.dark_gray}
-                className="zen-antque-regular"
-                lineHeight={1.2}
-              >
-                More than
-              </Text>
-              <Text
-                fontSize={69}
+                fontSize={["2.5rem", "4.3rem"]}
                 textAlign="left"
                 color={colors.white}
                 className="zen-antque-regular"
                 lineHeight={1.2}
               >
-                your average <br />
-                marketing <br />
+                More than
+              </Text>
+              
+              <Text
+                fontSize={["2.5rem", "4.3rem"]}
+                textAlign="left"
+                color={colors.dark_gray}
+                className="zen-antque-regular"
+                lineHeight={1.2}
+              >
+                your average <br/>
+                marketing <br/>
                 agency
               </Text>
             </VStack>
+            <div></div>
+
             <Grid templaterows="1fr 1fr" gap={6}>
-              <Flex alignItems="center" justifyContent="flex-start">
+              <Flex alignItems="flex-start" justifyContent="flex-start" >
                 <Text
-                  fontSize={16}
-                  textAlign="left"
+                  fontSize="1rem"
+                  textAlign="justify"
                   color={colors.gray}
                   className="red-hat-text"
                   fontWeight="bold"
-                  pr={20}
                 >
                   {textDescription}
                 </Text>
               </Flex>
               <Box>
-                <AppText fontSize={33} textAlign="left">
+                <AppText fontSize={["1.75rem", "2rem"]} textAlign="left">
                   Learn More
                 </AppText>
               </Box>
@@ -87,17 +89,18 @@ export default function ServicesMore({ shouldHaveTop = true }) {
       )}
 
       <Grid
-        templateColumns="1fr 1fr"
+        templateColumns={["1fr", "1fr 1fr"]}
         py={30}
-        mt={106}
+        mt={[30,  106]}
         rowGap={10}
-        marginX={100}
+        columnGap={10}
       >
         {serviceMoreCardData.map((data, index) => {
           return (
-            <GridItem style={{ display: "flex", justifyContent: "center" }}>
+            <GridItem style={{ display: "flex", justifyContent: "center" }}
+              key={index}>
               <ServiceMoreCard
-                key={index}
+
                 title={data.title}
                 subtitle={data.subtitle}
                 desc1={data.desc1}

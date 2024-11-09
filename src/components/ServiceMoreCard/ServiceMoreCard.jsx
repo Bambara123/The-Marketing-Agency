@@ -13,7 +13,6 @@ export default function ServiceMoreCard({
 }) {
   return (
     <Box
-      style={{ width: "550px", minHeight: "600px", alignSelf: "flex-start" }}
       p={10}
       bg={colors.card_black}
       borderRadius={15}
@@ -37,6 +36,7 @@ export default function ServiceMoreCard({
         <Text
           className="red-hat-text text-left-normal"
           color={colors.dark_gray}
+          fontSize={["1.2rem", "1rem"]}
         >
           {desc1}
         </Text>
@@ -44,7 +44,7 @@ export default function ServiceMoreCard({
           textAlign="left"
           color={colors.dark_gray}
           className="red-hat-text"
-          fontSize={16}
+          fontSize={["1.2rem", "1rem"]}
         >
           {desc2}
         </Text>
@@ -52,11 +52,11 @@ export default function ServiceMoreCard({
           textAlign="left"
           color={colors.dark_gray}
           className="red-hat-text"
-          fontSize={16}
+          fontSize={["1.2rem", "1rem"]}
         >
           {desc3}
         </Text>
-        <AppText fontSize={23}>Learn More</AppText>
+        <AppText fontSize={["1.5rem","1.5rem"]}>Learn More</AppText>
       </VStack>
     </Box>
   );

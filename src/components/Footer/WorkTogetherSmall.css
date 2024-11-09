@@ -18,3 +18,11 @@
   transform: rotate(0deg);
   z-index: 1;
 }
+
+
+@media (max-width: 480px) {
+  .arrow-container {
+    width: 10px;
+    height: 10px;
+  }
+}

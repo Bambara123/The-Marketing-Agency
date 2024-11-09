@@ -103,7 +103,7 @@
     clip-path: circle(45vh at 51% 50%);
   }
   100% {
-    clip-path: circle(45vh at 50% 50%);
+    clip-path: circle(25vh at 50% 50%);
   }
 }
 
@@ -113,5 +113,16 @@
   }
   100% {
     transform: translateY(0);
+  }
+}
+
+@media (max-width: 480px) {
+  .header{
+    height: 50vh;
+  }
+
+  .header .bg_video{
+    height: 50vh;
+
   }
 }

@@ -1,9 +1,9 @@
-.worktogether-dev .arrow-container {
+/* .worktogether-dev .arrow-container {
   background-color: #dd582d;
   border-radius: 50%;
   width: 80px;
   height: 80px;
-}
+} */
 
 .worktogether-dev .arrow {
   transform: rotate(-45deg);
@@ -63,5 +63,5 @@
 .kkkk {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 900;
-  font-size: 150px;
+  font-size: 9.5rem;
 }

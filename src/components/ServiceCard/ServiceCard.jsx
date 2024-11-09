@@ -12,7 +12,7 @@ export default function ServiceCard({ imageUrl, title_, subtitle }) {
             <Image src={process.env.PUBLIC_URL + imageUrl}></Image>
           </Box>
           <Text
-            fontSize={23}
+            fontSize={"1.5rem"}
             color={colors.white}
             className="zen-antque-regular"
           >
@@ -21,7 +21,7 @@ export default function ServiceCard({ imageUrl, title_, subtitle }) {
           <Text
             color={colors.dark_gray}
             className="red-hat-text-bold"
-            fontSize={19}
+            fontSize={"1.25rem"}
           >
             {subtitle}
           </Text>

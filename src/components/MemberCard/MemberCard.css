@@ -21,17 +21,17 @@
 }
 
 .member-card .heading {
-  font-size: 16px;
+  font-size: 1rem;
   color: white;
 }
 .member-card .subheading {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 600;
   color: #c3c3c3;
 }
 
 .member-card .sub-subheading {
-  font-size: 16px;
+  font-size: 1rem;
   color: #c3c3c3;
 }
 

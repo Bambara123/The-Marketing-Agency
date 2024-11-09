@@ -7,14 +7,14 @@ import { serviceTypesList } from "../../mockData/mockdata";
 
 export default function ServiceTypes() {
   return (
-    <div className="service-types" style={{ backgroundColor: colors.black }}>
+    <div className="service-types-dev" style={{ backgroundColor: colors.black }}>
       <Wrap
-        spacingX={60}
-        spacingY={90}
+        spacingX={[20, 40, 40]}
+        spacingY={[40, 60, 90]}
         align="center"
         justify="center"
-        pt={153}
-        pb={190}
+        pt={[50, 100, 153]} 
+        pb={[60, 120, 190]} 
       >
         {serviceTypesList.map((serviceType, index) => {
           return (
@@ -30,9 +30,9 @@ export default function ServiceTypes() {
       </Wrap>
 
       <Button
-        borderRadius={15}
+        borderRadius={["10px", "15px"]}
         size={"lg"}
-        py={"30px"}
+        py={["20px","30px"] }
         className="button-anime"
         colorScheme={colors.white}
         variant="outline"

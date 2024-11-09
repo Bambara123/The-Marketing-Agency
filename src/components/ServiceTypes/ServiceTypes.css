@@ -1,9 +1,9 @@
-.service-types .button-anime {
+.service-types-dev .button-anime {
   color: white;
   animation: pulseButton 2s ease-in-out infinite;
 }
 
-.service-types .button-anime:hover {
+.service-types-dev .button-anime:hover {
   animation: buttonHover 0.5s forwards;
   scale: 1.2;
 }

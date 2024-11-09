@@ -15,3 +15,10 @@
   transform: rotate(0deg);
   z-index: 1;
 }
+
+@media (max-width: 480px) {
+  .worktogether-dev .arrow-container {
+    width: 30px;
+    height: 30px;
+  }
+}

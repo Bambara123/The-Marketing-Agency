@@ -1,7 +1,17 @@
 .service-card .service-type-image {
   transition: transform 0.5s ease-in-out;
+  width: 30vw;
 }
 
 .service-card .service-type-image:hover {
-  transform: rotateZ(2deg) scale(0.95);
+  transform: rotateZ(2deg) scale(0.95)
+  
+  ;
+}
+
+
+@media (max-width: 480px) {
+  .service-card .service-type-image {
+    width: 72vw;
+  }
 }

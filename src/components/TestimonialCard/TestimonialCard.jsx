@@ -11,14 +11,14 @@ export default function TestimonialCard({
   since,
 }) {
   return (
-    <Box width="320px" p={3}>
+    <Box width={["200px", "320px"]} p={3}>
       <VStack align="left" spacing={1}>
         <Text
           className="red-hat-text"
           color={colors.dark_gray}
           fontWeight={500}
           textAlign="left"
-          fontSize={16}
+          fontSize="1rem"
         >
           {feedback}
         </Text>
@@ -34,7 +34,7 @@ export default function TestimonialCard({
           className="zen-antque-regular"
           color={colors.white}
           textAlign="left"
-          fontSize={16}
+          fontSize="1rem"
         >
           {name}
         </Text>
@@ -42,7 +42,7 @@ export default function TestimonialCard({
           className="red-hat-text"
           color={colors.dark_gray}
           fontWeight={600}
-          fontSize={16}
+          fontSize="1rem"
           textAlign="left"
         >
           {position}
@@ -51,13 +51,13 @@ export default function TestimonialCard({
         <Image
           src={process.env.PUBLIC_URL + brandImageUrl}
           name={name + "brand-logo"}
-          width="50px"
+          width={["30px","50px"]}
           mt={2}
         ></Image>
         <Text
           className="red-hat-text"
           color={colors.dark_gray}
-          fontSize={12}
+          fontSize="0.75rem"
           textAlign="left"
           mt={1}
         >

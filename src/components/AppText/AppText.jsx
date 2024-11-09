@@ -1,9 +1,10 @@
 import React from "react";
 import "./AppText.css";
+import {Text} from "@chakra-ui/react";
 
 export default function AppText({
   children,
-  fontSize = 69,
+  fontSize = [],
   textAlign = "center",
   classNameCustom,
   fontName = "zen-antque-regular",
@@ -16,11 +17,12 @@ export default function AppText({
   }
 
   return (
-    <p
+    <Text
       className={classNameCustom}
-      style={{ fontSize: fontSize, textAlign: textAlign }}
+      fontSize={[fontSize[0], fontSize[1]]}
+      style={{ textAlign: textAlign }}
     >
       {children}
-    </p>
+    </Text>
   );
 }

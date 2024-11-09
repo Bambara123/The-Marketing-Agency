@@ -1,6 +1,10 @@
 .service-more-card {
+  width: 100%;
+  align-self: flex-start;
   border-width: 1px;
+  min-height: 600px;
   border-color: #181818;
+ 
 }
 
 .service-more-card:hover {
@@ -15,5 +19,11 @@
   100% {
     border-width: 1px;
     border-color: #ff4500;
+  }
+}
+
+@media (max-width: 480px) {
+  .service-more-card{
+    min-height: 300px;
   }
 }

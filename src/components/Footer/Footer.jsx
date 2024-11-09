@@ -24,26 +24,26 @@ export default function Footer() {
   const subsectionTitles = ["About", "About", "About"];
 
   return (
-    <Box className="footer" pt={160}>
+    <Box className="footer" pt={[40, 160]}>
       <Box>
         <Divider color={colors.dark_gray}></Divider>
         <Grid
-          mt={"60px"}
+          mt={["30px","60px"]}
           templateColumns="repeat(8,1fr)"
           templateRows="repeat(1,1fr)"
-          gap={4}
-          h={230}
+          gap={[2, 4]}
+          h={["80px", "230px"]}
         >
           <GridItem colSpan={3}>
             <Text
               textAlign="left"
-              fontSize={27}
+              fontSize={["1.10rem", "1.75rem"]}
               className="zen-antque-regular"
               color={colors.white}
             >
               Full Service Agency
               <br />
-              Branding, Marketing, <br />
+              Branding, Marketing, <br/>
               Advertising
             </Text>
           </GridItem>
@@ -54,10 +54,10 @@ export default function Footer() {
                 <VStack align="left" justify="space-between" h={"100%"}>
                   <Text
                     textAlign="left"
-                    fontSize={22}
+                    fontSize={["1.1rem", "1.375rem"]}
                     className="zen-antque-regular"
                     color={colors.white}
-                    mb={3}
+                    mb={[0, 3]}
                   >
                     {subsectionTitle}
                   </Text>
@@ -69,7 +69,7 @@ export default function Footer() {
                           textAlign="left"
                           color={colors.dark_gray}
                           className="red-hat-text footer-subsection"
-                          fontSize={18}
+                          fontSize={["0.80rem", "1.125rem"]}
                           fontWeight={600}
                           mt={2}
                         >
@@ -89,19 +89,19 @@ export default function Footer() {
         </Grid>
       </Box>
 
-      <Divider mt={120}></Divider>
-      <HStack py={4} justify="space-between">
+      <Divider mt={[30, 120]}></Divider>
+      <HStack py={[2, 4]} justify="space-between">
         <Text
           color={colors.white}
           className="red-hat-text footer-bottom-left"
-          fontSize={18}
+          fontSize="1.125rem"
         >
           The Marketing Agency
         </Text>
         <Text
           color={colors.white}
           className="red-hat-text footer-bottom-right"
-          fontSize={18}
+          fontSize="1.125rem"
         >
           Since 2019
         </Text>

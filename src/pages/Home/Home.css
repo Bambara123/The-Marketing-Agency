@@ -2,10 +2,19 @@
 .services-more,
 .testimonnial,
 .killer-header,
-.process {
-  padding-left: 120px;
-  padding-right: 120px;
+.process
+{
+  padding-left: 10vw;
+  padding-right: 10vw;
   background-color: #101010;
+}
+
+
+.service-types{
+  padding-left: 12vw;
+  padding-right: 12vw;
+  background-color: #101010;
+
 }
 
 .killer-header {

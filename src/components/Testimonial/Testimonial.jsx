@@ -2,26 +2,27 @@ import React from "react";
 
 import { testimonials } from "../../mockData/mockdata";
 import TestimonialCard from "../TestimonialCard/TestimonialCard";
-import { Divider, Wrap, Text } from "@chakra-ui/react";
+import { Divider, Wrap, Text, Box} from "@chakra-ui/react";
 import colors from "../../config/colors";
 import "./Testimonial.css";
 
 export default function Testimonial() {
   return (
-    <div
+    <Box
       className="testimonial-dev"
-      style={{ backgroundColor: colors.black, paddingTop: "157px" }}
+      pt={["0px", "160px"]}
+      style={{ backgroundColor: colors.black}}
     >
       <Divider></Divider>
       <Text
-        mt={160}
-        fontSize={69}
+        mt={["60px", "160px"]}
+        fontSize="5.4rem"
         className="zen-antque-regular"
         color={colors.white}
       >
         They Love Us
       </Text>
-      <Wrap spacing={16} justify={"center"} pt={177}>
+      <Wrap spacing={[16, 20]} justify={"center"} pt={[40, 160]}>
         {testimonials.map((testimonial, index) => {
           return (
             <TestimonialCard
@@ -36,6 +37,6 @@ export default function Testimonial() {
           );
         })}
       </Wrap>
-    </div>
+    </Box>
   );
 }
