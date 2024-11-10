@@ -17,7 +17,7 @@ export default function WorkTogetherSmall() {
           textAlign="right"
           className="zen-antque-regular"
           color={colors.white}
-          fontSize={["1rem", "1.75rem"]}
+          fontSize={["1rem", "1.1rem", "1.2rem", "1.4rem", "1.75rem"]}
         >
           Let's work together.
         </Text>
@@ -25,7 +25,7 @@ export default function WorkTogetherSmall() {
           <Text
             className="zen-antque-regular"
             color={colors.orange}
-            fontSize={["0.8rem", "1.75rem"]}
+            fontSize={["0.8rem", "0.9rem", "1.2rem", "1.4rem", "1.75rem"]}
           >
             Schedule a Call
           </Text>
@@ -33,7 +33,7 @@ export default function WorkTogetherSmall() {
             <ArrowForwardIcon
               className="arrow"
               color={colors.white}
-              boxSize={["10px", "24px"]}
+              boxSize={["10px", "14px", "24px"]}
             ></ArrowForwardIcon>
           </div>
         </HStack>
@@ -45,7 +45,7 @@ export default function WorkTogetherSmall() {
           textAlign="right"
           color={colors.white}
           className="red-hat-text"
-          fontSize={["0.75rem", "1rem"]}
+          fontSize={["0.75rem", "0.8rem", "0.9rem", "1rem"]}
           mt={["0px", "6px"]}
           lineHeight={1.2}
           mb={2}

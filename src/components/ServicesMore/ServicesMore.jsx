@@ -38,10 +38,13 @@ export default function ServicesMore({ shouldHaveTop = true }) {
             Customer Feedback and Portfolio
           </Text>
           <Divider orientation="horizontal" />
-          <Grid templateColumns="3fr 1fr 4fr"  mt={["80px", "120px"]}>
+          <Grid
+            templateColumns="3fr 1fr 4fr"
+            mt={["80px", "80px", "90px", "120px"]}
+          >
             <VStack justify="start" align="start">
               <Text
-                fontSize={["2.5rem", "4.3rem"]}
+                fontSize={["2.5rem", "3rem", "3.5rem", "3.5rem", "4.3rem"]}
                 textAlign="left"
                 color={colors.white}
                 className="zen-antque-regular"
@@ -49,23 +52,23 @@ export default function ServicesMore({ shouldHaveTop = true }) {
               >
                 More than
               </Text>
-              
+
               <Text
-                fontSize={["2.5rem", "4.3rem"]}
+                fontSize={["2.5rem", "3rem", "3.5rem", "3.5rem", "4.3rem"]}
                 textAlign="left"
                 color={colors.dark_gray}
                 className="zen-antque-regular"
                 lineHeight={1.2}
               >
-                your average <br/>
-                marketing <br/>
+                your average <br />
+                marketing <br />
                 agency
               </Text>
             </VStack>
             <div></div>
 
             <Grid templaterows="1fr 1fr" gap={6}>
-              <Flex alignItems="flex-start" justifyContent="flex-start" >
+              <Flex alignItems="flex-start" justifyContent="flex-start">
                 <Text
                   fontSize="1rem"
                   textAlign="justify"
@@ -77,7 +80,10 @@ export default function ServicesMore({ shouldHaveTop = true }) {
                 </Text>
               </Flex>
               <Box>
-                <AppText fontSize={["1.75rem", "2rem"]} textAlign="left">
+                <AppText
+                  fontSize={["1.75rem", "1.75rem", "2rem"]}
+                  textAlign="left"
+                >
                   Learn More
                 </AppText>
               </Box>
@@ -89,18 +95,19 @@ export default function ServicesMore({ shouldHaveTop = true }) {
       )}
 
       <Grid
-        templateColumns={["1fr", "1fr 1fr"]}
+        templateColumns={["1fr", "1fr", "1fr 1fr"]}
         py={30}
-        mt={[30,  106]}
+        mt={[30, 30, 55, 106]}
         rowGap={10}
         columnGap={10}
       >
         {serviceMoreCardData.map((data, index) => {
           return (
-            <GridItem style={{ display: "flex", justifyContent: "center" }}
-              key={index}>
+            <GridItem
+              style={{ display: "flex", justifyContent: "center" }}
+              key={index}
+            >
               <ServiceMoreCard
-
                 title={data.title}
                 subtitle={data.subtitle}
                 desc1={data.desc1}

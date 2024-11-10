@@ -19,6 +19,12 @@
   z-index: 1;
 }
 
+@media (max-width: 768px) {
+  .arrow-container {
+    width: 14px;
+    height: 14px;
+  }
+}
 
 @media (max-width: 480px) {
   .arrow-container {

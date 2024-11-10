@@ -1,6 +1,6 @@
 import React from "react";
 import "./AppText.css";
-import {Text} from "@chakra-ui/react";
+import { Text } from "@chakra-ui/react";
 
 export default function AppText({
   children,
@@ -19,7 +19,13 @@ export default function AppText({
   return (
     <Text
       className={classNameCustom}
-      fontSize={[fontSize[0], fontSize[1]]}
+      fontSize={[
+        fontSize[0],
+        fontSize[1],
+        fontSize[2],
+        fontSize[3],
+        fontSize[4],
+      ]}
       style={{ textAlign: textAlign }}
     >
       {children}

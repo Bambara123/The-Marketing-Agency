@@ -9,7 +9,10 @@ export default function ServiceCard({ imageUrl, title_, subtitle }) {
       <Center color="white">
         <VStack>
           <Box className="service-type-image">
-            <Image src={process.env.PUBLIC_URL + imageUrl}></Image>
+            <Image
+              src={process.env.PUBLIC_URL + imageUrl}
+              className="image"
+            ></Image>
           </Box>
           <Text
             fontSize={"1.5rem"}

@@ -6,17 +6,18 @@
  font-size: 2rem;
 } */
 
-.client-types .marquee{
+.client-types .marquee {
   padding-top: 148px;
 }
 
-
-@media(max-width : 480px){
-  .client-types .marquee{
+@media (max-width: 768px) {
+  .client-types .marquee {
     padding-top: 70px;
-
   }
 }
 
-
-
+@media (max-width: 480px) {
+  .client-types .marquee {
+    padding-top: 70px;
+  }
+}

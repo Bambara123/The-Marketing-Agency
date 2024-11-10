@@ -7,7 +7,7 @@ export default function Logo({ logoUrl }) {
       <Image
         src={process.env.PUBLIC_URL + "/logos/" + logoUrl}
         alt=""
-        height={["60px", "100px"]}
+        height={["60px", "70px", "80px", "90px", "100px"]}
         style={{ padding: "0px 20px" }}
       />
     </div>

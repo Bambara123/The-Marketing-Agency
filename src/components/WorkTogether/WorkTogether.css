@@ -16,6 +16,20 @@
   z-index: 1;
 }
 
+@media (max-width: 992px) {
+  .worktogether-dev .arrow-container {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .worktogether-dev .arrow-container {
+    width: 40px;
+    height: 40px;
+  }
+}
+
 @media (max-width: 480px) {
   .worktogether-dev .arrow-container {
     width: 30px;

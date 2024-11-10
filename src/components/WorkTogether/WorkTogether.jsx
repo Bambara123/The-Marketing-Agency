@@ -6,26 +6,35 @@ import "./WorkTogether.css";
 
 export default function WorkTogether() {
   return (
-    <Box className="worktogether-dev" bg={colors.black} pt={[40, 156]} px={[0, 120]}>
+    <Box
+      className="worktogether-dev"
+      bg={colors.black}
+      pt={[40, 40, 40, 40, 156]}
+      px={[0, 0, 0, 0, 0, 120]}
+    >
       <VStack>
         <Divider></Divider>
         <Text
           className="red-hat-text"
           color={colors.dark_gray}
           fontSize="1.75rem"
-          mt={[40, 155]}
+          mt={[40, 40, 100, 155]}
           fontWeight={600}
         >
           Tell Us About Your Project
         </Text>
-        <Text className="zen-antque-regular" color={colors.white} fontSize={["3rem", "5rem"]}>
+        <Text
+          className="zen-antque-regular"
+          color={colors.white}
+          fontSize={["3rem", "3.5rem", "4rem", "3.75rem", "4.5rem", "5rem"]}
+        >
           Let's work together.
         </Text>
         <HStack spacing={10}>
           <Text
             className="zen-antque-regular"
             color={colors.orange}
-            fontSize={["4rem","6.645rem"]}
+            fontSize={["4rem", "4.25rem", "5rem", "5rem", "6.2rem", "6.645rem"]}
           >
             Schedule a Call
           </Text>
@@ -33,7 +42,7 @@ export default function WorkTogether() {
             <ArrowForwardIcon
               className="arrow"
               color={colors.white}
-              boxSize={["30px", "80px"]}
+              boxSize={["30px", "40px", "40px", "80px"]}
             ></ArrowForwardIcon>
           </div>
         </HStack>

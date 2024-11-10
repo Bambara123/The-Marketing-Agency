@@ -11,7 +11,7 @@ export default function TestimonialCard({
   since,
 }) {
   return (
-    <Box width={["200px", "320px"]} p={3}>
+    <Box width={["200px", "240px", "320px"]} p={3}>
       <VStack align="left" spacing={1}>
         <Text
           className="red-hat-text"
@@ -27,7 +27,7 @@ export default function TestimonialCard({
           src={process.env.PUBLIC_URL + imageUrl}
           size={"lg"}
           name={name}
-          mt={10}
+          mt={[5, 5, 5, 10]}
         ></Avatar>
 
         <Text
@@ -51,7 +51,7 @@ export default function TestimonialCard({
         <Image
           src={process.env.PUBLIC_URL + brandImageUrl}
           name={name + "brand-logo"}
-          width={["30px","50px"]}
+          width={["30px", "50px"]}
           mt={2}
         ></Image>
         <Text

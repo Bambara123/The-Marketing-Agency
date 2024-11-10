@@ -3,15 +3,22 @@
   width: 30vw;
 }
 
-.service-card .service-type-image:hover {
-  transform: rotateZ(2deg) scale(0.95)
-  
-  ;
+.service-card .service-type-image .image {
+  width: 100%;
 }
 
+.service-card .service-type-image:hover {
+  transform: rotateZ(2deg) scale(0.95);
+}
 
 @media (max-width: 480px) {
   .service-card .service-type-image {
     width: 72vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .service-card .service-type-image {
+    width: 70vw;
   }
 }
