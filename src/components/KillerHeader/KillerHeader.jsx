@@ -1,10 +1,41 @@
-import { HStack, Text, VStack } from "@chakra-ui/react";
-import { useEffect } from "react";
+import { HStack, Text } from "@chakra-ui/react";
+import { useEffect, useRef } from "react";
 
 import "./KillerHeader.css";
 
 export default function KillerHeader() {
+  const tabletWidth = 992;
+
+  const text1Ref = useRef(null);
+  const text2Ref = useRef(null);
+
   useEffect(() => {
+    const handleScroll = () => {
+      if (window.innerWidth > tabletWidth) {
+        if (text1Ref.current) {
+          const rect = text1Ref.current.getBoundingClientRect();
+          if (rect.top <= window.innerHeight * 0.9999) {
+            text1Ref.current.classList.add("animation-left");
+          }
+        }
+        if (text2Ref.current) {
+          const rect = text2Ref.current.getBoundingClientRect();
+          if (rect.top <= window.innerHeight * 0.9999) {
+            text2Ref.current.classList.add("animation-right");
+          }
+        }
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {};
+  });
+
+  useEffect(() => {
+    if (window.innerWidth < tabletWidth) {
+      text1Ref.current.classList.add("animation-left");
+      text2Ref.current.classList.add("animation-right");
+    }
+
     let words = document.querySelectorAll(".word");
     words.forEach((word) => {
       let letters = word.textContent.split("");
@@ -54,17 +85,21 @@ export default function KillerHeader() {
 
   return (
     <div className="killer-header-dev">
-      <Text className="zen-antque-regular text-line-1">Full-Service</Text>
-      <Text className="zen-antque-regular text-line-2">MARKETING</Text>
+      <Text ref={text1Ref} className="red-hat-text-bold text-line-1">
+        Full-Service
+      </Text>
+      <Text ref={text2Ref} className="red-hat-text-bold text-line-2">
+        Marketing
+      </Text>
       <HStack className="container">
-        <Text className="zen-antque-regular text-line-3">Agency with </Text>
+        <Text className="red-hat-text-bold text-line-3">Agency with </Text>
         <div className="rotating-text-container">
           <div className="rotating-text">
             <p>
-              <span className="word zen-antque-regular w-1">Consultancy.</span>
-              <span className="word zen-antque-regular w-2">Branding.</span>
-              <span className="word zen-antque-regular w-3">Advertising.</span>
-              <span className="word zen-antque-regular w-4">Marketing.</span>
+              <span className="word red-hat-text-bold w-1">Consultancy.</span>
+              <span className="word red-hat-text-bold w-2">Branding.</span>
+              <span className="word red-hat-text-bold w-3">Advertising.</span>
+              <span className="word red-hat-text-bold w-4">Marketing.</span>
             </p>
           </div>
         </div>

@@ -5,51 +5,27 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
 }
 
 #container {
-  top: 300px;
-  width: 100px;
-  height: 100px;
-  position: relative;
+  height: 400px;
+  width: 600px;
   background-color: aqua;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 #infoi {
-  background-color: blue;
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  animation: rotate 5s infinite linear;
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 #navi {
-  background-color: rgb(0, 0, 0);
   position: absolute;
-  width: 20px;
-  height: 20px;
-}
-
-@keyframes borderRadiusChange {
-  0% {
-    border-radius: 0%;
-  }
-  50% {
-    border-radius: 50%;
-  }
-  100% {
-    border-radius: 0%;
-  }
-}
-
-@keyframes rotate {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+  background-color: aquamarine;
+  height: 100px;
+  width: 100px;
 }

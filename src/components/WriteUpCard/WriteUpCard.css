@@ -6,6 +6,7 @@
   border-width: 1px;
   border-color: #181818;
   opacity: 0.4;
+  min-height: 200px;
 }
 
 .writeup-card.scaled {
@@ -18,14 +19,14 @@
   animation: borderHover 2s forwards;
 }
 
-.truncated-text {
+/* .truncated-text {
   display: -webkit-box;
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: normal;
-}
+} */
 
 @keyframes borderHover {
   0% {
@@ -39,5 +40,12 @@
   100% {
     border-width: 1px;
     border-color: #fc8a60;
+  }
+}
+
+@media (max-width: 480px) {
+  .writeup-card {
+    border-radius: 10px !important;
+    min-height: 200px;
   }
 }

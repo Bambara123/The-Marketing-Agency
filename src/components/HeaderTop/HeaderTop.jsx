@@ -12,20 +12,22 @@ export default function HeaderTop() {
   return (
     <div className="header-top">
       <HStack justify="space-between">
-        <HStack className="logo-container">
-          {["logo-icon", "logo-text"].map((data, index) => {
-            return (
-              <Image
-                key={index}
-                src={process.env.PUBLIC_URL + "/" + data + ".svg"}
-                alt="logo"
-                className={data}
-              />
-            );
-          })}
-        </HStack>
+        <Link to={theMarketingAgencyRoute}>
+          <HStack className="logo-container">
+            {["logo-icon", "logo-text"].map((data, index) => {
+              return (
+                <Image
+                  key={index}
+                  src={process.env.PUBLIC_URL + "/" + data + ".svg"}
+                  alt="logo"
+                  className={data}
+                />
+              );
+            })}
+          </HStack>
+        </Link>
         <HStack
-          w={500}
+          w={[200, 280, 300, 400, 500]}
           justify="space-between"
           borderWidth={1}
           borderRadius={15}
@@ -53,7 +55,7 @@ export default function HeaderTop() {
             className="say-hello-box"
             bg={colors.dark_gray}
             py={2}
-            px={8}
+            px={[5, 8]}
             borderTopRightRadius={15}
             borderBottomRightRadius={15}
             borderWidth={1}
@@ -61,7 +63,7 @@ export default function HeaderTop() {
             <nav>
               <Text
                 className="red-hat-text "
-                fontSize={16}
+                fontSize={"1rem"}
                 color={colors.white}
               >
                 Say Hello

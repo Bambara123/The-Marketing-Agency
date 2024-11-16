@@ -4,31 +4,31 @@
   box-sizing: border-box;
 }
 
-.header {
+.header-main {
   height: 100vh;
   width: 100%;
   overflow: hidden;
   position: relative !important;
 }
 
-.header .bg_video {
+.header-main .bg_video {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 100vh;
   width: 100%;
+  height: 100vh;
   z-index: -1;
 }
 
-.header .bg_video img {
-  height: 100%;
+.header-main .bg_video img {
   width: 100%;
+  height: 100%;
   object-fit: cover;
   filter: blur(20px);
 }
 
-.header .bg_video .filter-blur {
+.header-main .bg_video .filter-blur {
   height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.7);
@@ -37,7 +37,7 @@
   left: 0;
 }
 
-.header .bg_video_masked {
+.header-main .bg_video_masked {
   height: 100%;
   width: 100%;
   position: absolute;
@@ -45,7 +45,7 @@
   left: 0;
 }
 
-.header .bg_video_masked .circle_mask {
+.header-main .bg_video_masked .circle_mask {
   height: 100%;
   width: 100%;
   position: absolute;
@@ -57,7 +57,7 @@
   animation: circle_movement 3s forwards ease-in;
 }
 
-.header .title {
+.header-main .title {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 600;
   position: absolute;
@@ -71,7 +71,7 @@
   text-align: left;
 }
 
-.header .invert {
+.header-main .invert {
   height: 100%;
   width: 100%;
   position: absolute;
@@ -82,13 +82,13 @@
   animation: circle_movement 3s forwards ease-in;
 }
 
-.header .invert img {
+.header-main .invert img {
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
 
-.header .invert .title {
+.header-main .invert .title {
   mix-blend-mode: difference;
 }
 
@@ -103,7 +103,7 @@
     clip-path: circle(45vh at 51% 50%);
   }
   100% {
-    clip-path: circle(25vh at 50% 50%);
+    clip-path: circle(45vh at 50% 50%);
   }
 }
 
@@ -117,12 +117,32 @@
 }
 
 @media (max-width: 480px) {
-  .header{
-    height: 50vh;
+  .header-main {
+    height: 36vh;
   }
 
-  .header .bg_video{
-    height: 50vh;
+  .header-main .bg_video {
+    height: 36vh;
+  }
 
+  .header-main .title {
+    font-size: 5rem;
+    line-height: 6rem;
+    padding-bottom: 1rem;
+  }
+
+  @keyframes circle_movement {
+    0% {
+      clip-path: circle(12vh at 150% 60%);
+    }
+    60% {
+      clip-path: circle(12vh at -30% 60%);
+    }
+    90% {
+      clip-path: circle(12vh at 51% 60%);
+    }
+    100% {
+      clip-path: circle(12vh at 50% 60%);
+    }
   }
 }

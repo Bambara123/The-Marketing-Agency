@@ -6,6 +6,7 @@ import Home from "./pages/Home/Home";
 import Work from "./pages/Work/Work";
 import Services from "./pages/Services/Services";
 import Culture from "./pages/Culture/Culture";
+import ScrollToTop from "./helperComponents/ScrollToTop";
 
 import HeaderTop from "./components/HeaderTop/HeaderTop";
 
@@ -13,6 +14,7 @@ function App() {
   return (
     <div className="App">
       <Router>
+        <ScrollToTop />
         <HeaderTop></HeaderTop>
         <Routes>
           <Route path="/The-Marketing-Agency/" element={<Home />} />

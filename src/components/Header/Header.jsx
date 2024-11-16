@@ -1,8 +1,108 @@
 import React from "react";
 import "./Header.css";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 
 export default function () {
+  const isScrollBlockedRef = useRef(true);
+  const circleRadiusRef = useRef(45);
+  const goingDownRef = useRef(true);
+
+  const currentDevice =
+    window.innerWidth < 480
+      ? "less_than_480"
+      : window.innerWidth < 768
+      ? "less_than_768"
+      : window.innerWidth < 992
+      ? "less_than_992"
+      : "more_than_992";
+
+  const circlePositionInDevices = {
+    less_than_480: [50, 60],
+    less_than_768: [50, 50],
+    less_than_992: [50, 50],
+    more_than_992: [50, 50],
+  };
+
+  const circleSizes = {
+    less_than_480: [12, 20],
+    less_than_768: [45, 110],
+    less_than_992: [45, 110],
+    more_than_992: [45, 110],
+  };
+
+  console.log(currentDevice);
+
+  // measue the speed and calculate the radius.
+  useEffect(() => {
+    let lastEvent = null;
+
+    const handleWheel = (e) => {
+      const now = performance.now();
+      if (lastEvent) {
+        const deltaTime = now - lastEvent.timestamp;
+        const speed = e.deltaY / deltaTime;
+
+        if (
+          circleRadiusRef.current < circleSizes[currentDevice][1] &&
+          goingDownRef.current
+        ) {
+          if (circleRadiusRef.current <= circleSizes[currentDevice][0]) {
+            circleRadiusRef.current = circleSizes[currentDevice][0];
+          }
+          const newRadius = circleRadiusRef.current + speed * 4;
+          circleRadiusRef.current = newRadius;
+          if (circleRadiusRef.current > circleSizes[currentDevice][1]) {
+            isScrollBlockedRef.current = false;
+            goingDownRef.current = false;
+            circleRadiusRef.current = 111;
+          }
+        }
+
+        if (window.scrollY <= 1 && !goingDownRef.current) {
+          const newRadius = circleRadiusRef.current + speed * 4;
+          circleRadiusRef.current = newRadius;
+
+          if (circleRadiusRef.current < circleSizes[currentDevice][1]) {
+            isScrollBlockedRef.current = true;
+          }
+
+          if (circleRadiusRef.current <= circleSizes[currentDevice][0]) {
+            goingDownRef.current = true;
+          }
+        }
+      }
+
+      lastEvent = {
+        timestamp: now,
+        delta: e.deltaY,
+      };
+    };
+    window.addEventListener("wheel", handleWheel, { passive: true });
+
+    return () => {
+      window.removeEventListener("wheel", handleWheel);
+    };
+  }, []);
+
+  // prvent scroll when the isScrollBlockedRef = true
+  useEffect(() => {
+    const preventScroll = (e) => {
+      if (isScrollBlockedRef.current) {
+        e.preventDefault();
+      }
+    };
+
+    // Prevent both wheel and touch scrolling
+    document.addEventListener("wheel", preventScroll, { passive: false });
+    document.addEventListener("touchmove", preventScroll, { passive: false });
+
+    return () => {
+      document.removeEventListener("wheel", preventScroll);
+      document.removeEventListener("touchmove", preventScroll);
+    };
+  }, []);
+
+  // add classes with given radius
   useEffect(() => {
     const image = document.querySelectorAll(".actual_file");
     const timer = setTimeout(() => {
@@ -15,35 +115,33 @@ export default function () {
     }, 1000);
 
     const handleScroll = () => {
-      if (window.scrollY < 300) {
-        document.querySelector(".header").style.position = "fixed";
-        const circle_radius =
-          (window.scrollY / 300) *
-            ((40 * window.innerWidth) / window.innerHeight) +
-          45;
-        document.querySelector(
-          ".circle_mask"
-        ).style = `clip-path:circle(${circle_radius}vh at 50% 50%) !important; animation:unset`;
-        document.querySelector(
-          ".invert"
-        ).style = `clip-path:circle(${circle_radius}vh at 50% 50%) !important; animation:unset`;
-        document.body.style.paddingTop = "0px";
-      } else {
-        document.querySelector(".header").style.position = "relative";
-        // document.body.style.paddingTop = "300px";
-      }
+      document.querySelector(".circle_mask").style = `clip-path:circle(${
+        circleRadiusRef.current > circleSizes[currentDevice][0]
+          ? circleRadiusRef.current
+          : circleSizes[currentDevice][0]
+      }vh at ${circlePositionInDevices[currentDevice][0]}% ${
+        circlePositionInDevices[currentDevice][1]
+      }%) !important; animation:unset`;
+      document.querySelector(".invert").style = `clip-path:circle(${
+        circleRadiusRef.current > circleSizes[currentDevice][0]
+          ? circleRadiusRef.current
+          : circleSizes[currentDevice][0]
+      }vh at ${circlePositionInDevices[currentDevice][0]}% ${
+        circlePositionInDevices[currentDevice][1]
+      }%) !important; animation:unset`;
+      document.body.style.paddingTop = "0px";
     };
 
-    document.addEventListener("scroll", handleScroll);
+    document.addEventListener("wheel", handleScroll);
 
-    // Cleanup function to clear the timeout if the component unmounts before the timeout finishes
     return () => {
       clearTimeout(timer);
-      document.removeEventListener("scroll", handleScroll);
+      document.removeEventListener("wheel", handleScroll);
     };
-  }, []); // Empty dependency array means this effect runs once on mount and cleans up on unmount
+  });
+
   return (
-    <div className="header">
+    <div className="header-main">
       <div className="bg_video">
         <img
           className="actual_file"

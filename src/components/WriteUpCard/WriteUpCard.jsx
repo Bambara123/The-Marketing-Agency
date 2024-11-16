@@ -16,9 +16,9 @@ export default function WriteUpCard({
   useEffect(() => {
     const handleScroll = () => {
       if (cardRef.current) {
-        const rect = cardRef.current.getBoundingClientRect();
+        const rect = cardRef.current.getBoundingClientRect(); // get the rectangle the card is contained in.
         const windowHeight = window.innerHeight;
-        if (rect.top >= 100 && rect.bottom <= windowHeight - 50) {
+        if (rect.top >= 100 && rect.bottom <= windowHeight - 30) {
           cardRef.current.classList.add("scaled");
         } else {
           cardRef.current.classList.remove("scaled");
@@ -44,47 +44,42 @@ export default function WriteUpCard({
       direction={{ base: "column", sm: "row" }}
       className="writeup-card"
       ref={cardRef}
-      style={{ backgroundColor: colors.card_black, borderRadius: 20 }}
-      py={25}
-      px={50}
+      style={{ backgroundColor: colors.card_black }}
+      py={[10, 25]}
+      px={[10, 50]}
     >
       <Stack align={"left"} flex={2}>
         <Text className="zen-antque-regular text-left-white-header">
           {companyName}
         </Text>
-        {/* <Image
-            src={process.env.PUBLIC_URL + "/logos/" + logo}
-            alt="logo"
-            width={140}
-          /> */}
         <Text className="text-left-normal" color={colors.dark_gray} pt={5}>
           {location}
         </Text>
       </Stack>
 
       <Stack flex={5}>
-        <CardBody>
-          <Text
-            size="sm"
-            textAlign="left"
-            color={colors.white}
-            className="red-hat-text-bold text-left-normal"
-          >
-            {services}
-          </Text>
+        <Text
+          size="sm"
+          textAlign="left"
+          color={colors.white}
+          className="red-hat-text-bold text-left-normal"
+        >
+          {services}
+        </Text>
 
-          <Text py="2" className="text-left-normal" color={colors.dark_gray}>
-            {date}
-          </Text>
+        <Text py={[2]} className="text-left-normal" color={colors.dark_gray}>
+          {date}
+        </Text>
 
-          <Text
-            py="2"
-            className={`red-hat-text text-left-normal`}
-            color={colors.dark_gray}
-          >
-            {description}
-          </Text>
-          {/* {description.split(" ").length > 50 && (
+        <Text
+          py={[2]}
+          className={`red-hat-text text-left-normal`}
+          color={colors.dark_gray}
+          textAlign="justify"
+        >
+          {description}
+        </Text>
+        {/* {description.split(" ").length > 50 && (
             <Text
               onClick={toggleReadMore}
               color={colors.blue}
@@ -94,7 +89,6 @@ export default function WriteUpCard({
               {isExpanded ? "Read Less" : "Read More"}
             </Text>
           )} */}
-        </CardBody>
       </Stack>
     </Card>
   );
