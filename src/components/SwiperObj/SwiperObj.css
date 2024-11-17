@@ -31,3 +31,18 @@ body {
   width: 100%;
   border-radius: 20px;
 }
+
+@media (max-width: 480px) {
+  .swiperobject-tma {
+    margin: 0px 30px 0px 30px;
+  }
+
+  .swiperobject-tma .swiper {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .swiperobject-tma .swiper-slide img {
+    border-radius: 10px;
+  }
+}

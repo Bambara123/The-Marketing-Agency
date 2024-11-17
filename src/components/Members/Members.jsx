@@ -9,15 +9,21 @@ export default function Members() {
 
   return (
     <div className="members">
-      <Text className="zen-antque-regular members-header">{header}</Text>
+      <Text
+        className="zen-antque-regular members-header"
+        fontSize={["3.5rem", "4.5rem"]}
+        pt={[0, 80]}
+      >
+        {header}
+      </Text>
 
       <Wrap
         spacingX={10}
         spacingY={10}
         align="center"
         justify="center"
-        pt={100}
-        pb={190}
+        pt={["30px", 100]}
+        pb={[50, 190]}
       >
         {memberList.map((member, index) => {
           return (

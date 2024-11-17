@@ -11,6 +11,7 @@ export default function WorkTogether() {
       bg={colors.black}
       pt={[40, 40, 40, 40, 156]}
       px={[0, 0, 0, 0, 0, 120]}
+      pb={[40, 55, 55, 160]}
     >
       <VStack>
         <Divider></Divider>

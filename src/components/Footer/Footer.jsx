@@ -24,7 +24,7 @@ export default function Footer() {
   const subsectionTitles = ["About", "About", "About"];
 
   return (
-    <Box className="footer" pt={[40, 55, 55, 160]}>
+    <Box className="footer">
       <Box>
         <Divider color={colors.dark_gray}></Divider>
         <Grid

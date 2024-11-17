@@ -11,11 +11,13 @@ export default function MemberCard({ imageUrl, name, role, expertise }) {
             className="image"
           ></Image>
         </Box>
-        <Text className="zen-antque-regular heading">{name}</Text>
-        <Text className="red-hat-text subheading">{role}</Text>
-        <Text className="red-hat-text sub-subheading">
-          {expertise.join(" | ")}
-        </Text>
+        <Box pt={[5]} lineHeight={[7]}>
+          <Text className="zen-antque-regular heading">{name}</Text>
+          <Text className="red-hat-text subheading">{role}</Text>
+          <Text className="red-hat-text sub-subheading">
+            {expertise.join(" | ")}
+          </Text>
+        </Box>
       </VStack>
     </Box>
   );

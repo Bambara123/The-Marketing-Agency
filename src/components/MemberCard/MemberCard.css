@@ -49,3 +49,14 @@
     border-color: #fc8a60;
   }
 }
+
+@media (max-width: 480px) {
+  .member-card .image-container .image {
+    height: 140px;
+    width: 140px;
+  }
+  .member-card {
+    height: 260px;
+    width: 220px;
+  }
+}

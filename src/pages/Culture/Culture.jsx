@@ -9,8 +9,9 @@ import Footer from "../../components/Footer/Footer";
 export default function Culture() {
   return (
     <div className="culture-continer" style={{ backgroundColor: colors.black }}>
-      <div className="header-swiper"> </div>
-      <SwiperObj></SwiperObj>
+      <div className="header-swiper">
+        <SwiperObj></SwiperObj>
+      </div>
 
       <div className="culture-main">
         <Members></Members>
