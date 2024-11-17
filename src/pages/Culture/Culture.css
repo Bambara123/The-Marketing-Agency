@@ -8,6 +8,18 @@
   padding-right: 10vw;
 }
 
+@media (max-width: 992px) {
+  .culture-continer .header-swiper {
+    padding-top: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .culture-continer .header-swiper {
+    padding-top: 100px;
+  }
+}
+
 @media (max-width: 480px) {
   .culture-continer .header-swiper {
     padding-top: 100px;

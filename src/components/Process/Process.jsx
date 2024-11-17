@@ -28,7 +28,10 @@ export default function Process() {
     <div className="process-dev">
       <VStack>
         <div className="wrapper">
-          <Text className="process-header zen-antque-regular">
+          <Text
+            className="process-header zen-antque-regular"
+            textAlign={"left"}
+          >
             We Shape You ...
           </Text>
         </div>
@@ -36,20 +39,20 @@ export default function Process() {
         <Box className="process-container">
           <Box className="opacity-container"></Box>
 
-          <HStack className="stack" gap={55}>
-            <div className="process-research">
+          <HStack className="stack" gap={[5, 10, 12, 12, 55]}>
+            <div className="process-elements process-research">
               <Text className="text">Research</Text>
             </div>
-            <div className="process-strategy">
+            <div className="process-elements process-strategy">
               <Text className="text">Strategy</Text>
             </div>
-            <div className="process-creative">
+            <div className="process-elements process-creative">
               <Text className="text">Creative</Text>
             </div>
-            <div className="process-activation">
+            <div className="process-elements process-activation">
               <Text className="text">Activation</Text>
             </div>
-            <div className="process-results">
+            <div className="process-elements process-results">
               <Text className="text">Results</Text>
             </div>
           </HStack>

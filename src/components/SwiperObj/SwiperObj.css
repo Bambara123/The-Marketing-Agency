@@ -16,7 +16,7 @@ body {
 
 .swiperobject-tma .swiper {
   width: 100%;
-  padding-top: 50px;
+  padding-top: 100px;
   padding-bottom: 50px;
 }
 
@@ -30,6 +30,51 @@ body {
   display: block;
   width: 100%;
   border-radius: 20px;
+}
+
+@media (max-width: 1280px) {
+  .swiperobject-tma {
+    margin: 70px 90px 0px 90px;
+  }
+
+  .swiperobject-tma .swiper {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .swiperobject-tma .swiper-slide img {
+    border-radius: 15px;
+  }
+}
+
+@media (max-width: 992px) {
+  .swiperobject-tma {
+    margin: 70px 70px 0px 70px;
+  }
+
+  .swiperobject-tma .swiper {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .swiperobject-tma .swiper-slide img {
+    border-radius: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .swiperobject-tma {
+    margin: 40px 50px 0px 50px;
+  }
+
+  .swiperobject-tma .swiper {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .swiperobject-tma .swiper-slide img {
+    border-radius: 14px;
+  }
 }
 
 @media (max-width: 480px) {

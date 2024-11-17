@@ -1,5 +1,27 @@
 .process {
-  padding-top: 80px;
+  padding-top: 100px;
   padding-left: 10vw;
   padding-right: 10vw;
+  padding-bottom: 80px;
+}
+
+@media (max-width: 992px) {
+  .process {
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .process {
+    padding-top: 0px;
+    padding-bottom: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .process {
+    padding-top: 0px;
+    padding-bottom: 40px;
+  }
 }

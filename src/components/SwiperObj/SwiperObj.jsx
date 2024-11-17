@@ -15,7 +15,7 @@ export default function SwiperObj() {
         effect={"coverflow"}
         centeredSlides={true}
         breakpoints={{
-          480: {
+          1280: {
             slidesPerView: 1,
             coverflowEffect: {
               rotate: 70,
@@ -25,7 +25,7 @@ export default function SwiperObj() {
               slideShadows: true,
             },
           },
-          992: {
+          1280: {
             slidesPerView: 3,
             coverflowEffect: {
               rotate: 70,
@@ -37,7 +37,7 @@ export default function SwiperObj() {
           },
         }}
         autoplay={{
-          delay: 2500,
+          delay: 2000,
           disableOnInteraction: false,
         }}
         easing="ease-in-out"

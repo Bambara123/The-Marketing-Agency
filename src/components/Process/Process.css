@@ -6,7 +6,7 @@
 .process-dev .process-header {
   color: #fff;
   font-weight: 600;
-  font-size: 8rem;
+  font-size: 5.5rem;
   background: linear-gradient(
     to right,
     white 1%,
@@ -21,7 +21,6 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: textclip 10s linear infinite;
-  display: inline-block;
 }
 
 @keyframes textclip {
@@ -40,7 +39,7 @@
   width: 100%;
 }
 
-.stack {
+.process-container .stack {
   position: relative;
   margin: 70px;
   width: 100%;
@@ -56,11 +55,7 @@
   background-repeat: no-repeat;
 }
 
-.process-dev .process-container .process-research,
-.process-dev .process-container .process-strategy,
-.process-dev .process-container .process-activation,
-.process-dev .process-container .process-creative,
-.process-dev .process-container .process-results {
+.process-dev .process-container .process-elements {
   background-color: rgb(254, 244, 244);
   border: solid 4px #f7764c;
   width: 20%;
@@ -78,7 +73,6 @@
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 1.5rem;
-
   font-weight: 600;
   color: #000000;
   text-align: center;
@@ -200,14 +194,166 @@
   }
 }
 
+@media (max-width: 1280px) {
+  .process-dev .process-header {
+    font-size: 3.5rem;
+  }
+
+  .process-dev .process-container {
+    margin-top: 20px;
+  }
+
+  .process-dev .process-container .text {
+    font-size: 0.9rem;
+  }
+
+  .process-container .stack {
+    margin: 70px 50px 70px 50px;
+    width: 100%;
+  }
+
+  .process-dev .process-container .process-elements {
+    border-width: 4px;
+  }
+
+  @keyframes glowingBorder {
+    0% {
+      box-shadow: 0 0 1px #ff4500, 0 0 2px #ff4500, 0 0 3px #ff4500,
+        0 0 4px #ff4500;
+    }
+    50% {
+      box-shadow: 0 0 2px #ff4500, 0 0 4px #ff4500, 0 0 6px #ff4500,
+        0 0 8px #ff4500;
+    }
+    90% {
+      box-shadow: 0 0 1px #ff4500, 0 0 2px #ff4500, 0 0 3px #ff4500,
+        0 0 4px #ff4500;
+    }
+    100% {
+      box-shadow: 0 0 0 0, 0 0 0 0, 0 0 0 0, 0 0 0 0;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .process-dev .process-header {
+    font-size: 3.5rem;
+  }
+
+  .process-dev .process-container {
+    margin-top: 20px;
+  }
+
+  .process-dev .process-container .text {
+    font-size: 0.8rem;
+  }
+
+  .process-container .stack {
+    margin: 70px 30px 70px 30px;
+    width: 100%;
+  }
+
+  .process-dev .process-container .process-elements {
+    border-width: 3px;
+  }
+
+  @keyframes glowingBorder {
+    0% {
+      box-shadow: 0 0 1px #ff4500, 0 0 2px #ff4500, 0 0 3px #ff4500,
+        0 0 4px #ff4500;
+    }
+    50% {
+      box-shadow: 0 0 2px #ff4500, 0 0 4px #ff4500, 0 0 6px #ff4500,
+        0 0 8px #ff4500;
+    }
+    90% {
+      box-shadow: 0 0 1px #ff4500, 0 0 2px #ff4500, 0 0 3px #ff4500,
+        0 0 4px #ff4500;
+    }
+    100% {
+      box-shadow: 0 0 0 0, 0 0 0 0, 0 0 0 0, 0 0 0 0;
+    }
+  }
+}
+
 @media (max-width: 768px) {
   .process-dev .process-header {
     font-size: 3rem;
+  }
+
+  .process-dev .process-container {
+    margin-top: 20px;
+  }
+
+  .process-dev .process-container .text {
+    font-size: 0.75rem;
+  }
+
+  .process-container .stack {
+    margin: 50px 30px 50px 30px;
+    width: 100%;
+  }
+
+  .process-dev .process-container .process-elements {
+    border-width: 2px;
+  }
+
+  @keyframes glowingBorder {
+    0% {
+      box-shadow: 0 0 1px #ff4500, 0 0 2px #ff4500, 0 0 3px #ff4500,
+        0 0 4px #ff4500;
+    }
+    50% {
+      box-shadow: 0 0 2px #ff4500, 0 0 4px #ff4500, 0 0 6px #ff4500,
+        0 0 8px #ff4500;
+    }
+    90% {
+      box-shadow: 0 0 1px #ff4500, 0 0 2px #ff4500, 0 0 3px #ff4500,
+        0 0 4px #ff4500;
+    }
+    100% {
+      box-shadow: 0 0 0 0, 0 0 0 0, 0 0 0 0, 0 0 0 0;
+    }
   }
 }
 
 @media (max-width: 480px) {
   .process-dev .process-header {
-    font-size: 2rem;
+    font-size: 2.5rem;
+  }
+
+  .process-dev .process-container {
+    margin-top: 20px;
+  }
+
+  .process-dev .process-container .text {
+    font-size: 0.75rem;
+  }
+
+  .process-container .stack {
+    margin: 20px;
+    width: 100%;
+  }
+
+  .process-dev .process-container .process-elements {
+    border-width: 2px;
+  }
+
+  @keyframes glowingBorder {
+    0% {
+      box-shadow: 0 0 1px #ff4500, 0 0 2px #ff4500, 0 0 3px #ff4500,
+        0 0 4px #ff4500;
+    }
+    50% {
+      box-shadow: 0 0 2px #ff4500, 0 0 4px #ff4500, 0 0 6px #ff4500,
+        0 0 8px #ff4500;
+    }
+    90% {
+      box-shadow: 0 0 1px #ff4500, 0 0 2px #ff4500, 0 0 3px #ff4500,
+        0 0 4px #ff4500;
+    }
+    100% {
+      box-shadow: 0 0 0 0, 0 0 0 0, 0 0 0 0, 0 0 0 0;
+    }
   }
 }

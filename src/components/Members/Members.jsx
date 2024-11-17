@@ -12,7 +12,7 @@ export default function Members() {
       <Text
         className="zen-antque-regular members-header"
         fontSize={["3.5rem", "4.5rem"]}
-        pt={[0, 80]}
+        pt={[0, 0, 0, 10, 10]}
       >
         {header}
       </Text>
@@ -22,8 +22,8 @@ export default function Members() {
         spacingY={10}
         align="center"
         justify="center"
-        pt={["30px", 100]}
-        pb={[50, 190]}
+        pt={["30px", "30px", "50px", "40px", "60px"]}
+        pb={[50, "80px", "100px", "130px", 190]}
       >
         {memberList.map((member, index) => {
           return (
